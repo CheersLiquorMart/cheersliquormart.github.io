@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Welcome">
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold text-center mb-4">Welcome to Cheers Liquor Mart</h1>
+    <p class="text-xl text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+      Your trusted partner in the beverage industry. Access important company information and resources.
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <Card 
+        title="Company Policies"
+        body="Access our comprehensive guide to workplace policies, procedures, and guidelines."
+        href="/policies"
+      />
+      
+      <Card 
+        title="Upcoming Events"
+        body="Stay updated with company events, training sessions, and team activities."
+        href="/events"
+      />
+      
+      <Card 
+        title="Employee Resources"
+        body="Access important resources including Paychex Flex and health provider information."
+        href="/employee-resources"
+      />
+    </div>
+  </div>
+</Layout>
