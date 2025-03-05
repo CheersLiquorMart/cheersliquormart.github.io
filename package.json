@@ -5,10 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-<<<<<<< HEAD
     "start": "astro dev",
-=======
->>>>>>> 80712360970f9a088717ab05020317d8d06202e8
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
