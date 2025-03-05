@@ -4,7 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
+<<<<<<< HEAD
         primary: '#065f46', // emerald-800
+=======
+        primary: '#1a4d2e',
+>>>>>>> 80712360970f9a088717ab05020317d8d06202e8
       },
     },
   },

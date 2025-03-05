@@ -15,6 +15,7 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title} - Cheers Liquor Mart</title>
   </head>
+<<<<<<< HEAD
   <body class="min-h-screen bg-gray-50">
     <header class="bg-emerald-800 text-white">
       <nav class="container mx-auto px-4 py-4">
@@ -24,6 +25,18 @@ const { title } = Astro.props;
             <a href="/policies" class="hover:text-emerald-200">Policies</a>
             <a href="/events" class="hover:text-emerald-200">Events</a>
             <a href="/employee-resources" class="hover:text-emerald-200">Resources</a>
+=======
+  <body>
+    <header class="bg-primary text-white">
+      <nav class="container mx-auto px-4 py-6">
+        <div class="flex justify-between items-center">
+          <a href="/" class="text-2xl font-bold">Cheers Liquor Mart</a>
+          <div class="space-x-6">
+            <a href="/" class="hover:text-gray-300">Home</a>
+            <a href="/policies" class="hover:text-gray-300">Policies</a>
+            <a href="/events" class="hover:text-gray-300">Events</a>
+            <a href="/employee-resources" class="hover:text-gray-300">Employee Resources</a>
+>>>>>>> 80712360970f9a088717ab05020317d8d06202e8
           </div>
         </div>
       </nav>
@@ -33,6 +46,7 @@ const { title } = Astro.props;
       <slot />
     </main>
 
+<<<<<<< HEAD
     <footer class="bg-gray-800 text-white mt-auto">
       <div class="container mx-auto px-4 py-6">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
@@ -58,9 +72,55 @@ const { title } = Astro.props;
           </div>
         </div>
         <div class="text-center border-t border-gray-700 pt-6">
+=======
+    <footer class="bg-gray-800 text-white mt-12">
+      <div class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+            <p>123 Main Street</p>
+            <p>Your City, State 12345</p>
+            <p>Phone: (555) 123-4567</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="/policies" class="hover:text-gray-300">Company Policies</a></li>
+              <li><a href="/events" class="hover:text-gray-300">Upcoming Events</a></li>
+              <li><a href="/employee-resources" class="hover:text-gray-300">Employee Resources</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Business Hours</h3>
+            <p>Monday - Friday: 9:00 AM - 9:00 PM</p>
+            <p>Saturday: 10:00 AM - 8:00 PM</p>
+            <p>Sunday: 11:00 AM - 6:00 PM</p>
+          </div>
+        </div>
+        <div class="text-center mt-8 pt-8 border-t border-gray-700">
+>>>>>>> 80712360970f9a088717ab05020317d8d06202e8
           <p>&copy; {new Date().getFullYear()} Cheers Liquor Mart. All rights reserved.</p>
         </div>
       </div>
     </footer>
   </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+
+<style is:global>
+  :root {
+    --color-primary: #1a4d2e;
+  }
+
+  html {
+    font-family: system-ui, sans-serif;
+    background: #f6f6f6;
+  }
+
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+</style>
+>>>>>>> 80712360970f9a088717ab05020317d8d06202e8
