@@ -15,8 +15,8 @@ jobs:
 
     - name: Setup Node.js
       uses: actions/setup-node@v2
-  wi:
-        node-version: '16'18.x
+  with:
+      node-version: '16'18.x
 
     - name: Install dependencies
       run: npm install
