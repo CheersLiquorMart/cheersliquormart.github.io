@@ -3,7 +3,6 @@ import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   site: 'https://cheersliquormart.github.io',
-  base: '/cheersliquormart.github.io',
-  output: 'static',
+  base: '/',
   integrations: [tailwind()],
 });
