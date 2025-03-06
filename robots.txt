@@ -1,0 +1,16 @@
+# robots.txt for Cheers Liquor Mart
+User-agent: *
+Disallow: /resources/
+Disallow: /policies/
+Disallow: /handbook.html
+Disallow: /benefits-information.html
+Disallow: /workers-comp.html
+Disallow: /incident-report.html
+
+# Allow public-facing content
+Allow: /index.html
+Allow: /events.html
+Allow: /public/images/cheers-logo.png
+
+# Protect against content theft
+Crawl-delay: 10
