@@ -38,4 +38,9 @@ This is a static HTML website hosted via GitHub Pages. The site features:
 
 The website is accessible at: [https://cheersliquormart.github.io](https://cheersliquormart.github.io)
 
+## Deployment
+This site is automatically deployed to GitHub Pages when changes are pushed to the main branch.
+
+Last update: March 6, 2024
+
 © 2024 Cheers Liquor Mart. All rights reserved.
