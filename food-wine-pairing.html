@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Food and Wine Pairing Guide for Cheers Liquor Mart employees - Learn how to recommend perfect wine pairings for any meal.">
+    <meta name="theme-color" content="#d81e05">
+    <title>Food & Wine Pairing - Cheers Liquor Mart</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .pairing-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .pairing-section h2 {
+            color: #065f46;
+            margin-bottom: 1rem;
+        }
+
+        .pairing-section h3 {
+            color: #065f46;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        .pairing-section ul {
+            margin-bottom: 1.5rem;
+        }
+
+        .pairing-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .pairing-tip {
+            background-color: #f3f4f6;
+            border-left: 4px solid #d81e05;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .pairing-tip h4 {
+            margin-top: 0;
+            color: #d81e05;
+        }
+
+        .pairing-card {
+            background-color: #f9fafb;
+            border-left: 4px solid #065f46;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .pairing-card h4 {
+            margin-top: 0;
+            color: #065f46;
+        }
+
+        .pairing-card.red {
+            border-left: 4px solid #991b1b;
+        }
+
+        .pairing-card.red h4 {
+            color: #991b1b;
+        }
+
+        .pairing-card.white {
+            border-left: 4px solid #854d0e;
+        }
+
+        .pairing-card.white h4 {
+            color: #854d0e;
+        }
+
+        .pairing-card.sparkling {
+            border-left: 4px solid #1e40af;
+        }
+
+        .pairing-card.sparkling h4 {
+            color: #1e40af;
+        }
+
+        .pairing-card.dessert {
+            border-left: 4px solid #9d174d;
+        }
+
+        .pairing-card.dessert h4 {
+            color: #9d174d;
+        }
+
+        .pairing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        .pairing-table th,
+        .pairing-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .pairing-table th {
+            background-color: #f9fafb;
+            font-weight: 600;
+            color: #065f46;
+        }
+
+        .pairing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .pairing-example {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .pairing-example-header {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            font-weight: 600;
+            color: #065f46;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .pairing-example-content {
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav aria-label="Primary navigation">
+            <div class="container">
+                <div class="nav-left">
+                    <a href="javascript:history.back()" class="nav-back">← Back</a>
+                    <a href="index.html" class="logo">
+                        <img src="public/images/cheers-logo.png" alt="Cheers Liquor Mart Logo">
+                        <span class="sr-only">Cheers Liquor Mart</span>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="policies.html">Policies</a>
+                    <a href="events.html">Events</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="incident-report.html" class="nav-highlight">Incident Report</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Cheers Liquor Mart</h1>
+        <h2>Food & Wine Pairing Guide</h2>
+        <p class="subtitle">Master the basics of food pairing to help customers complete their meal plans.</p>
+
+        <div class="pairing-section">
+            <h2>Pairing Principles: The Basics</h2>
+
+            <div class="pairing-tip">
+                <h4>QUICK SELLING TIP</h4>
+                <p>When a customer is purchasing wine for a dinner party, ask what they're serving. Offering a specific pairing recommendation demonstrates your expertise and can lead to higher-value purchases.</p>
+            </div>
+
+            <h3>The Six Basic Tastes in Food</h3>
+            <p>Understanding how these tastes interact with wine is fundamental to successful pairing:</p>
+
+            <ul>
+                <li><strong>Salt:</strong> Enhances wine body, reduces bitterness, and can make wines taste smoother.</li>
+                <li><strong>Acid:</strong> High-acid foods need high-acid wines to match intensity.</li>
+                <li><strong>Sweet:</strong> Wine should be as sweet or sweeter than the food, or it will taste flat.</li>
+                <li><strong>Bitter:</strong> Can clash with high-tannin wines, creating excessive bitterness.</li>
+                <li><strong>Fat:</strong> Rich, fatty foods pair well with tannic wines or high-acid wines to cut through the richness.</li>
+                <li><strong>Umami:</strong> This savory taste can make wines taste flat or bitter; often needs wines with age or richness.</li>
+            </ul>
+
+            <h3>Three Approaches to Pairing</h3>
+
+            <div class="pairing-card">
+                <h4>1. Congruent Pairing</h4>
+                <p>Match similar flavors between the food and wine.</p>
+                <p><strong>Example:</strong> Buttery lobster with a buttery Chardonnay</p>
+                <p><strong>When to Use:</strong> When you want to amplify and enhance certain flavor characteristics</p>
+            </div>
+
+            <div class="pairing-card">
+                <h4>2. Complementary Pairing</h4>
+                <p>Contrast flavors to create balance.</p>
+                <p><strong>Example:</strong> Sweet dessert wine with salty blue cheese</p>
+                <p><strong>When to Use:</strong> When you want to balance intense flavors or create complexity</p>
+            </div>
+
+            <div class="pairing-card">
+                <h4>3. Regional Pairing</h4>
+                <p>"What grows together, goes together" - pair regional wines with cuisine from the same area.</p>
+                <p><strong>Example:</strong> Italian Chianti with tomato-based pasta</p>
+                <p><strong>When to Use:</strong> When suggesting authentic pairings that have stood the test of time</p>
+            </div>
+        </div>
+
+        <div class="pairing-section">
+            <h2>Wine & Food Pairing Guide by Wine Type</h2>
+
+            <div class="pairing-card red">
+                <h4>Red Wines</h4>
+                <table class="pairing-table">
+                    <tr>
+                        <th>Wine</th>
+                        <th>Characteristics</th>
+                        <th>Food Pairings</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Cabernet Sauvignon</strong></td>
+                        <td>Full-bodied, high tannins, black fruit, cedar</td>
+                        <td>Steak, lamb, beef stew, hard aged cheeses</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Merlot</strong></td>
+                        <td>Medium-bodied, soft tannins, plum, chocolate</td>
+                        <td>Roast chicken, pork tenderloin, pasta with meat sauce</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pinot Noir</strong></td>
+                        <td>Light to medium-bodied, low tannins, red fruits</td>
+                        <td>Salmon, duck, mushroom dishes, turkey</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Syrah/Shiraz</strong></td>
+                        <td>Full-bodied, medium-high tannins, blackberry, pepper</td>
+                        <td>BBQ, game meats, grilled beef, smoked meats</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Zinfandel</strong></td>
+                        <td>Medium to full-bodied, moderate tannins, jammy fruit</td>
+                        <td>Pizza, burgers, spicy foods, BBQ ribs</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="pairing-card white">
+                <h4>White Wines</h4>
+                <table class="pairing-table">
+                    <tr>
+                        <th>Wine</th>
+                        <th>Characteristics</th>
+                        <th>Food Pairings</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Chardonnay</strong></td>
+                        <td>Medium to full-bodied, apple, citrus, butter (if oaked)</td>
+                        <td>Lobster, crab, chicken with cream sauce, soft cheeses</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sauvignon Blanc</strong></td>
+                        <td>Light to medium-bodied, high acidity, citrus, herbs</td>
+                        <td>Goat cheese, white fish, asparagus, salads</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Riesling</strong></td>
+                        <td>Light-bodied, high acidity, stone fruits, citrus</td>
+                        <td>Spicy Asian cuisine, pork, seafood, chicken</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pinot Grigio</strong></td>
+                        <td>Light-bodied, crisp acidity, pear, apple</td>
+                        <td>Light seafood, salads, simple pasta dishes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Viognier</strong></td>
+                        <td>Medium to full-bodied, low acidity, floral, stone fruits</td>
+                        <td>Spicy foods, rich seafood, aromatic dishes</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="pairing-card sparkling">
+                <h4>Sparkling Wines</h4>
+                <table class="pairing-table">
+                    <tr>
+                        <th>Wine</th>
+                        <th>Characteristics</th>
+                        <th>Food Pairings</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Champagne (Brut)</strong></td>
+                        <td>High acidity, fine bubbles, citrus, toast</td>
+                        <td>Oysters, caviar, fried foods, sushi</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Prosecco</strong></td>
+                        <td>Light-bodied, fruity, pear, apple, florals</td>
+                        <td>Aperitifs, light appetizers, seafood, brunch</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cava</strong></td>
+                        <td>Medium-bodied, dry, green apple, almond</td>
+                        <td>Spanish tapas, paella, cured meats</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sparkling Rosé</strong></td>
+                        <td>Dry to off-dry, red fruit notes, citrus</td>
+                        <td>Sushi, salmon, charcuterie, light pasta</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="pairing-card dessert">
+                <h4>Dessert & Fortified Wines</h4>
+                <table class="pairing-table">
+                    <tr>
+                        <th>Wine</th>
+                        <th>Characteristics</th>
+                        <th>Food Pairings</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Port</strong></td>
+                        <td>Sweet, full-bodied, dark fruits, chocolate</td>
+                        <td>Blue cheese, chocolate desserts, nuts</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sauternes</strong></td>
+                        <td>Sweet, honey, apricot, tropical fruits</td>
+                        <td>Foie gras, blue cheese, fruit desserts</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ice Wine</strong></td>
+                        <td>Very sweet, concentrated fruit, high acidity</td>
+                        <td>Fruit tarts, cheesecake, foie gras</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sherry</strong></td>
+                        <td>Varies from dry to sweet, nutty, oxidized</td>
+                        <td>Dry styles: olives, almonds, seafood<br>Sweet styles: desserts, blue cheese</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="pairing-section">
+            <h2>Perfect Meal Pairings</h2>
+            <p>Suggest these complete pairings for common meal scenarios:</p>
+
+            <div class="pairing-grid">
+                <div class="pairing-example">
+                    <div class="pairing-example-header">Steak Dinner</div>
+                    <div class="pairing-example-content">
+                        <p><strong>Main:</strong> Ribeye steak</p>
+                        <p><strong>Wine:</strong> Cabernet Sauvignon or Malbec</p>
+                        <p><strong>Why it works:</strong> The high protein and fat in steak pairs perfectly with the tannins in these bold reds, creating a smooth mouthfeel.</p>
+                        <p><strong>Upsell opportunity:</strong> Suggest a premium Napa Cabernet or Argentinian Malbec Reserva.</p>
+                    </div>
+                </div>
+
+                <div class="pairing-example">
+                    <div class="pairing-example-header">Seafood Feast</div>
+                    <div class="pairing-example-content">
+                        <p><strong>Main:</strong> Grilled salmon, shrimp, scallops</p>
+                        <p><strong>Wine:</strong> Pinot Noir (for salmon) or Albariño (for lighter seafood)</p>
+                        <p><strong>Why it works:</strong> Pinot's light body and acidity complement salmon's richness, while Albariño's crisp character enhances shellfish.</p>
+                        <p><strong>Upsell opportunity:</strong> Suggest a premium Oregon Pinot Noir or Spanish Albariño.</p>
+                    </div>
+                </div>
+
+                <div class="pairing-example">
+                    <div class="pairing-example-header">Italian Night</div>
+                    <div class="pairing-example-content">
+                        <p><strong>Main:</strong> Pasta with tomato sauce or pizza</p>
+                        <p><strong>Wine:</strong> Chianti Classico or Sangiovese</p>
+                        <p><strong>Why it works:</strong> The high acidity in these wines matches the tomato acidity, while their moderate tannins complement the richness.</p>
+                        <p><strong>Upsell opportunity:</strong> Suggest a Chianti Classico Riserva or Super Tuscan blend.</p>
+                    </div>
+                </div>
+
+                <div class="pairing-example">
+                    <div class="pairing-example-header">Spicy Asian Cuisine</div>
+                    <div class="pairing-example-content">
+                        <p><strong>Main:</strong> Thai curry, Indian dishes, Szechuan</p>
+                        <p><strong>Wine:</strong> Off-dry Riesling or Gewürztraminer</p>
+                        <p><strong>Why it works:</strong> The slight sweetness in these wines balances spicy heat, while their aromatic qualities complement complex spices.</p>
+                        <p><strong>Upsell opportunity:</strong> Suggest a premium German Spätlese Riesling.</p>
+                    </div>
+                </div>
+
+                <div class="pairing-example">
+                    <div class="pairing-example-header">Cheese Board</div>
+                    <div class="pairing-example-content">
+                        <p><strong>Main:</strong> Variety of cheeses</p>
+                        <p><strong>Wine:</strong> Versatile options like Champagne or medium-bodied reds</p>
+                        <p><strong>Why it works:</strong> Sparkling wines cleanse the palate between different cheeses; aromatic whites pair with soft cheeses; reds with firm cheeses.</p>
+                        <p><strong>Upsell opportunity:</strong> Suggest a true Champagne or aged Port for blue cheese.</p>
+                    </div>
+                </div>
+
+                <div class="pairing-example">
+                    <div class="pairing-example-header">BBQ & Grilling</div>
+                    <div class="pairing-example-content">
+                        <p><strong>Main:</strong> Ribs, pulled pork, grilled meats</p>
+                        <p><strong>Wine:</strong> Zinfandel, Syrah, or Malbec</p>
+                        <p><strong>Why it works:</strong> These fruit-forward, full-bodied wines stand up to strong BBQ flavors while complementing the smokiness.</p>
+                        <p><strong>Upsell opportunity:</strong> Suggest a premium old-vine Zinfandel or Barossa Shiraz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pairing-section">
+            <h2>Common Pairing Challenges & Solutions</h2>
+
+            <div class="pairing-card">
+                <h4>Difficult-to-Pair Foods</h4>
+                <ul>
+                    <li><strong>Artichokes:</strong> Make wines taste sweeter; try Sauvignon Blanc or dry sparkling wine</li>
+                    <li><strong>Asparagus:</strong> Can make wine taste metallic; try grassy Sauvignon Blanc or unoaked Chardonnay</li>
+                    <li><strong>Eggs:</strong> Coat the palate and can make wines taste flat; try sparkling wine or crisp whites</li>
+                    <li><strong>Very Spicy Foods:</strong> Can overwhelm many wines; try off-dry Riesling or Gewürztraminer</li>
+                    <li><strong>Vinegar-Based Dressings:</strong> High acidity clashes with wine; try very high-acid wines like Sancerre</li>
+                </ul>
+            </div>
+
+            <div class="pairing-tip">
+                <h4>HANDLING MIXED PREFERENCES</h4>
+                <p>When customers are serving multiple dishes or have guests with different preferences, suggest versatile wines that pair with a range of foods:</p>
+                <ul>
+                    <li><strong>Sparkling wine:</strong> The acidity and bubbles make it food-friendly across many dishes</li>
+                    <li><strong>Pinot Noir:</strong> Light enough for fish, substantial enough for meat</li>
+                    <li><strong>Dry Rosé:</strong> Combines some of the characteristics of both red and white wines</li>
+                    <li><strong>Chenin Blanc:</strong> Ranges from dry to sweet, with good acidity</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pairing-section">
+            <h2>Pairing Conversation Guide</h2>
+            <p>Use these questions to guide customers to the perfect pairing:</p>
+
+            <h3>Questions to Ask Customers</h3>
+            <ol>
+                <li>"What are you serving with this wine?" or "Is this for a special occasion?"</li>
+                <li>"Do you prefer wines that contrast with your food or complement similar flavors?"</li>
+                <li>"On a scale of 1-5, how adventurous are you with your wine choices?"</li>
+                <li>"Are you looking for something that will please everyone, or are you open to something more unique?"</li>
+                <li>"What's your price range for this bottle?" (Important to ask tactfully)</li>
+            </ol>
+
+            <h3>Suggested Responses for Common Scenarios</h3>
+
+            <div class="pairing-card">
+                <h4>For a Special Occasion Dinner</h4>
+                <p><strong>Customer:</strong> "We're having friends over for a special dinner with beef tenderloin."</p>
+                <p><strong>Your Response:</strong> "Beef tenderloin pairs beautifully with a medium to full-bodied red wine. A Cabernet Sauvignon would be classic, offering rich black fruit flavors and enough structure to complement the meat without overpowering its more delicate flavor compared to ribeye. Our [Premium Cabernet] at $45 would be perfect, but I can also suggest our [Mid-range option] at $28 if you prefer."</p>
+            </div>
+
+            <div class="pairing-card">
+                <h4>For a Casual Gathering</h4>
+                <p><strong>Customer:</strong> "We're having a casual pizza night with friends."</p>
+                <p><strong>Your Response:</strong> "Pizza night calls for something fun and versatile. A medium-bodied red with good acidity works wonderfully with tomato sauce. I'd recommend an Italian Chianti or this California Zinfandel, which has bright fruit flavors and a touch of spice that will complement a variety of toppings. Both are crowd-pleasers that won't break the bank."</p>
+            </div>
+
+            <div class="pairing-card">
+                <h4>For a Customer Who Doesn't Know What They Want</h4>
+                <p><strong>Customer:</strong> "I'm not sure what wine to get. We're having salmon for dinner."</p>
+                <p><strong>Your Response:</strong> "Salmon pairs wonderfully with several options depending on how it's prepared. A classic pairing would be Pinot Noir, which has enough body to stand up to the fish but won't overpower it. If it's served with a cream sauce, you might enjoy a lightly oaked Chardonnay. Or for something different, a dry rosé offers the best of both worlds. Would you like me to show you some options in these styles?"</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Contact</h3>
+                    <p>123 Main Street</p>
+                    <p>Your City, State 12345</p>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div>
+                    <h3>Hours</h3>
+                    <p>Mon-Fri: 9:00 AM - 9:00 PM</p>
+                    <p>Saturday: 10:00 AM - 8:00 PM</p>
+                    <p>Sunday: 11:00 AM - 6:00 PM</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="policies.html">Company Policies</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                        <li><a href="resources.html">Employee Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cheers Liquor Mart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

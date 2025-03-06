@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wine Education for Cheers Liquor Mart employees - Learn about different wine varieties, regions, and characteristics.">
+    <meta name="theme-color" content="#d81e05">
+    <title>Wine Education - Cheers Liquor Mart</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .wine-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .wine-section h2 {
+            color: #065f46;
+            margin-bottom: 1rem;
+        }
+
+        .wine-section h3 {
+            color: #065f46;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        .wine-section ul {
+            margin-bottom: 1.5rem;
+        }
+
+        .wine-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .region-box {
+            background-color: #f9fafb;
+            border-left: 4px solid #7e22ce;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .region-box h4 {
+            margin-top: 0;
+            color: #7e22ce;
+        }
+
+        .variety-card {
+            background-color: #f3f4f6;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 8px;
+            border-left: 4px solid #065f46;
+        }
+
+        .variety-card h4 {
+            margin-top: 0;
+            color: #065f46;
+        }
+
+        .variety-card.red {
+            border-left: 4px solid #991b1b;
+        }
+
+        .variety-card.red h4 {
+            color: #991b1b;
+        }
+
+        .variety-card.white {
+            border-left: 4px solid #854d0e;
+        }
+
+        .variety-card.white h4 {
+            color: #854d0e;
+        }
+
+        .wine-fact {
+            background-color: #f3f4f6;
+            border-left: 4px solid #d81e05;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .wine-fact h4 {
+            margin-top: 0;
+            color: #d81e05;
+        }
+
+        .characteristics-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        .characteristics-table th,
+        .characteristics-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .characteristics-table th {
+            background-color: #f9fafb;
+            font-weight: 600;
+            color: #065f46;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav aria-label="Primary navigation">
+            <div class="container">
+                <div class="nav-left">
+                    <a href="javascript:history.back()" class="nav-back">← Back</a>
+                    <a href="index.html" class="logo">
+                        <img src="public/images/cheers-logo.png" alt="Cheers Liquor Mart Logo">
+                        <span class="sr-only">Cheers Liquor Mart</span>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="policies.html">Policies</a>
+                    <a href="events.html">Events</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="incident-report.html" class="nav-highlight">Incident Report</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Cheers Liquor Mart</h1>
+        <h2>Wine Types & Regions</h2>
+        <p class="subtitle">Learn the major wine varieties, regions, and what makes them unique.</p>
+
+        <div class="wine-section">
+            <h2>Wine Basics: Understanding the Fundamentals</h2>
+
+            <div class="wine-fact">
+                <h4>QUICK SELLING TIP</h4>
+                <p>When recommending wine to customers, ask about their preferences for sweetness, body, and food pairings. This shows expertise and helps guide them to wines they'll enjoy at higher price points.</p>
+            </div>
+
+            <h3>Wine Characteristics</h3>
+            <p>Understanding these key elements will help you describe and sell wines more effectively:</p>
+
+            <table class="characteristics-table">
+                <tr>
+                    <th>Characteristic</th>
+                    <th>Description</th>
+                    <th>Spectrum</th>
+                </tr>
+                <tr>
+                    <td><strong>Body</strong></td>
+                    <td>How the wine feels in your mouth; its weight and fullness</td>
+                    <td>Light → Medium → Full</td>
+                </tr>
+                <tr>
+                    <td><strong>Sweetness</strong></td>
+                    <td>The amount of residual sugar left after fermentation</td>
+                    <td>Dry → Off-dry → Sweet</td>
+                </tr>
+                <tr>
+                    <td><strong>Acidity</strong></td>
+                    <td>The tartness or crispness of the wine</td>
+                    <td>Low → Medium → High</td>
+                </tr>
+                <tr>
+                    <td><strong>Tannins</strong></td>
+                    <td>Compounds that create dryness and astringency (primarily in red wines)</td>
+                    <td>Soft → Medium → Firm</td>
+                </tr>
+                <tr>
+                    <td><strong>Alcohol</strong></td>
+                    <td>Measured as % ABV (alcohol by volume)</td>
+                    <td>Low (under 10%) → Medium (10-13.5%) → High (above 13.5%)</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="wine-section">
+            <h2>Red Wine Varieties</h2>
+            <p>Red wines get their color from fermenting with grape skins. They generally have more tannins and often pair well with red meats and rich dishes.</p>
+
+            <div class="variety-card red">
+                <h4>Cabernet Sauvignon</h4>
+                <p><strong>Profile:</strong> Full-bodied with firm tannins and notes of black currant, blackberry, cedar, and sometimes green pepper.</p>
+                <p><strong>Key Regions:</strong> Bordeaux (France), Napa Valley (California), Coonawarra (Australia)</p>
+                <p><strong>Food Pairings:</strong> Steak, lamb, aged cheeses</p>
+                <p><strong>Selling Point:</strong> "The king of red wines" - recognized globally as a premium variety</p>
+            </div>
+
+            <div class="variety-card red">
+                <h4>Merlot</h4>
+                <p><strong>Profile:</strong> Medium to full-bodied with soft tannins and flavors of plum, black cherry, and chocolate.</p>
+                <p><strong>Key Regions:</strong> Bordeaux (France), Washington State, Tuscany (Italy)</p>
+                <p><strong>Food Pairings:</strong> Roasted chicken, pork, tomato-based pasta dishes</p>
+                <p><strong>Selling Point:</strong> Approachable and smooth - perfect for customers new to red wine</p>
+            </div>
+
+            <div class="variety-card red">
+                <h4>Pinot Noir</h4>
+                <p><strong>Profile:</strong> Light to medium-bodied with delicate tannins and notes of red berries, mushroom, and earth.</p>
+                <p><strong>Key Regions:</strong> Burgundy (France), Willamette Valley (Oregon), Central Otago (New Zealand)</p>
+                <p><strong>Food Pairings:</strong> Salmon, duck, mushroom dishes</p>
+                <p><strong>Selling Point:</strong> "The heartbreak grape" - difficult to grow but produces some of the world's most sought-after wines</p>
+            </div>
+
+            <div class="variety-card red">
+                <h4>Syrah/Shiraz</h4>
+                <p><strong>Profile:</strong> Full-bodied with medium to high tannins and flavors of blackberry, pepper, and smoke.</p>
+                <p><strong>Key Regions:</strong> Rhône Valley (France), Barossa Valley (Australia), Washington State</p>
+                <p><strong>Food Pairings:</strong> Grilled meats, game, barbecue</p>
+                <p><strong>Selling Point:</strong> Same grape, different names - Syrah (French style) tends to be more restrained, while Shiraz (Australian style) is often bolder and fruitier</p>
+            </div>
+
+            <div class="variety-card red">
+                <h4>Zinfandel</h4>
+                <p><strong>Profile:</strong> Medium to full-bodied with moderate tannins and jammy flavors of blackberry, raspberry, and spice.</p>
+                <p><strong>Key Regions:</strong> California (especially Sonoma and Lodi)</p>
+                <p><strong>Food Pairings:</strong> Pizza, burgers, spicy foods</p>
+                <p><strong>Selling Point:</strong> "America's heritage grape" - with a rich history in California wine production</p>
+            </div>
+        </div>
+
+        <div class="wine-section">
+            <h2>White Wine Varieties</h2>
+            <p>White wines are typically fermented without grape skins, resulting in lighter colors and generally less tannins than reds.</p>
+
+            <div class="variety-card white">
+                <h4>Chardonnay</h4>
+                <p><strong>Profile:</strong> Medium to full-bodied with flavors ranging from apple and citrus to tropical fruit.</p>
+                <p><strong>Style Variation:</strong> Unoaked (crisp, mineral) vs. Oaked (buttery, vanilla notes)</p>
+                <p><strong>Key Regions:</strong> Burgundy (France), California, Australia</p>
+                <p><strong>Food Pairings:</strong> Seafood, poultry, creamy sauces</p>
+                <p><strong>Selling Point:</strong> Extremely versatile grape that can produce vastly different styles depending on winemaking choices</p>
+            </div>
+
+            <div class="variety-card white">
+                <h4>Sauvignon Blanc</h4>
+                <p><strong>Profile:</strong> Light to medium-bodied, high acidity, with flavors of grapefruit, green apple, and grass/herbs.</p>
+                <p><strong>Key Regions:</strong> Loire Valley (France), Marlborough (New Zealand), California</p>
+                <p><strong>Food Pairings:</strong> Goat cheese, salads, white fish</p>
+                <p><strong>Selling Point:</strong> Crisp and refreshing - perfect for warm weather and light meals</p>
+            </div>
+
+            <div class="variety-card white">
+                <h4>Riesling</h4>
+                <p><strong>Profile:</strong> Light-bodied with high acidity and flavors of green apple, peach, and sometimes petrol notes.</p>
+                <p><strong>Style Variation:</strong> Ranges from bone dry to very sweet</p>
+                <p><strong>Key Regions:</strong> Germany, Alsace (France), Finger Lakes (New York)</p>
+                <p><strong>Food Pairings:</strong> Spicy Asian cuisine, pork, seafood</p>
+                <p><strong>Selling Point:</strong> Incredible versatility and aging potential - can develop complex flavors over decades</p>
+            </div>
+
+            <div class="variety-card white">
+                <h4>Pinot Grigio/Pinot Gris</h4>
+                <p><strong>Profile:</strong> Light-bodied with crisp acidity and delicate flavors of pear, apple, and mineral notes.</p>
+                <p><strong>Style Variation:</strong> Italian Pinot Grigio (lighter, crisper) vs. Alsatian Pinot Gris (richer, fuller)</p>
+                <p><strong>Key Regions:</strong> Northern Italy, Alsace (France), Oregon</p>
+                <p><strong>Food Pairings:</strong> Light seafood, salads, appetizers</p>
+                <p><strong>Selling Point:</strong> Approachable and easy-drinking - a crowd-pleasing option for diverse gatherings</p>
+            </div>
+        </div>
+
+        <div class="wine-section">
+            <h2>Major Wine Regions of the World</h2>
+
+            <div class="region-box">
+                <h4>France</h4>
+                <p>The traditional benchmark for fine wine production with a focus on terroir (sense of place).</p>
+                <ul>
+                    <li><strong>Bordeaux:</strong> Famous for red blends based on Cabernet Sauvignon and Merlot</li>
+                    <li><strong>Burgundy:</strong> The pinnacle of Pinot Noir and Chardonnay production</li>
+                    <li><strong>Champagne:</strong> The original and most prestigious sparkling wine region</li>
+                    <li><strong>Rhône Valley:</strong> Known for Syrah-based reds in the north and blends in the south</li>
+                    <li><strong>Loire Valley:</strong> Diverse region producing excellent Sauvignon Blanc, Chenin Blanc, and more</li>
+                </ul>
+                <p><strong>What Makes It Unique:</strong> Strict appellation system, centuries of winemaking tradition, and an emphasis on expressing the unique qualities of each specific vineyard site.</p>
+            </div>
+
+            <div class="region-box">
+                <h4>Italy</h4>
+                <p>Incredible diversity with more native grape varieties than any other country.</p>
+                <ul>
+                    <li><strong>Tuscany:</strong> Home to Chianti, Brunello di Montalcino, and Super Tuscans</li>
+                    <li><strong>Piedmont:</strong> Producer of age-worthy Barolo and Barbaresco from Nebbiolo grapes</li>
+                    <li><strong>Veneto:</strong> Known for Prosecco, Soave, and rich Amarone della Valpolicella</li>
+                </ul>
+                <p><strong>What Makes It Unique:</strong> Food-friendly wines designed to complement the local cuisine, with incredible regional diversity from north to south.</p>
+            </div>
+
+            <div class="region-box">
+                <h4>United States</h4>
+                <p>New World innovation combined with quality-focused production.</p>
+                <ul>
+                    <li><strong>Napa Valley:</strong> World-class Cabernet Sauvignon and Chardonnay</li>
+                    <li><strong>Sonoma:</strong> Diverse region excelling in Pinot Noir, Zinfandel, and Chardonnay</li>
+                    <li><strong>Willamette Valley:</strong> Oregon's premier Pinot Noir region</li>
+                    <li><strong>Washington State:</strong> Emerging region for Cabernet Sauvignon, Merlot, and Syrah</li>
+                </ul>
+                <p><strong>What Makes It Unique:</strong> Innovative techniques, lack of rigid traditions allowing for experimentation, and a focus on varietal expression.</p>
+            </div>
+
+            <div class="region-box">
+                <h4>Spain</h4>
+                <p>Outstanding value with a mix of traditional and modern approaches.</p>
+                <ul>
+                    <li><strong>Rioja:</strong> Known for age-worthy Tempranillo-based reds with American oak influence</li>
+                    <li><strong>Ribera del Duero:</strong> Powerful Tempranillo wines from a high-altitude region</li>
+                    <li><strong>Priorat:</strong> Intense, mineral-driven reds from difficult mountainous terrain</li>
+                </ul>
+                <p><strong>What Makes It Unique:</strong> Some of the longest aging requirements for their classification system, extensive use of oak aging, and exceptional value compared to other European regions.</p>
+            </div>
+
+            <div class="region-box">
+                <h4>Australia</h4>
+                <p>Bold, fruit-forward wines with distinctive regional character.</p>
+                <ul>
+                    <li><strong>Barossa Valley:</strong> Rich, powerful Shiraz</li>
+                    <li><strong>Margaret River:</strong> Premium Cabernet Sauvignon and Chardonnay</li>
+                    <li><strong>Hunter Valley:</strong> Distinctive aged Semillon wines</li>
+                </ul>
+                <p><strong>What Makes It Unique:</strong> Diverse climate zones allowing for a wide range of grape varieties, innovative winemaking, and a focus on regional distinctiveness.</p>
+            </div>
+        </div>
+
+        <div class="wine-section">
+            <h2>Wine Label Reading Guide</h2>
+            <p>Understanding wine labels helps you guide customers through their purchase decisions:</p>
+
+            <h3>Old World (European) Labels</h3>
+            <ul>
+                <li>Focus on <strong>place of origin</strong> rather than grape variety</li>
+                <li>Classified by region (e.g., Bordeaux, Chianti) with regulatory quality levels</li>
+                <li>Often requires knowledge of which grapes are grown in which regions</li>
+                <li>Look for terms like AOC/AOP (France), DOC/DOCG (Italy), DO/DOCa (Spain)</li>
+            </ul>
+
+            <h3>New World Labels</h3>
+            <ul>
+                <li>Typically emphasize the <strong>grape variety</strong> (e.g., Cabernet Sauvignon, Chardonnay)</li>
+                <li>Clearly state the region and sometimes vineyard</li>
+                <li>More likely to include flavor descriptions and food pairing suggestions</li>
+                <li>Often more approachable for casual wine drinkers</li>
+            </ul>
+
+            <div class="wine-fact">
+                <h4>QUICK SELLING TIP</h4>
+                <p>When a customer is uncertain about a wine selection, offer to explain the label. This builds trust in your expertise and often leads to higher-value purchases.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Contact</h3>
+                    <p>123 Main Street</p>
+                    <p>Your City, State 12345</p>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div>
+                    <h3>Hours</h3>
+                    <p>Mon-Fri: 9:00 AM - 9:00 PM</p>
+                    <p>Saturday: 10:00 AM - 8:00 PM</p>
+                    <p>Sunday: 11:00 AM - 6:00 PM</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="policies.html">Company Policies</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                        <li><a href="resources.html">Employee Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cheers Liquor Mart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

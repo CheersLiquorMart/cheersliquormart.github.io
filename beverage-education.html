@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beverage Education Resources for Cheers Liquor Mart employees - Learn about wine, beer, and spirits to better serve customers.">
+    <meta name="theme-color" content="#d81e05">
+    <title>Beverage Education - Cheers Liquor Mart</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .education-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .education-section h2 {
+            color: #065f46;
+            margin-bottom: 1rem;
+        }
+
+        .resource-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .resource-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-image {
+            height: 160px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-content {
+            padding: 1rem;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            color: #065f46;
+        }
+
+        .quick-fact {
+            background-color: #f3f4f6;
+            border-left: 4px solid #d81e05;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .quick-fact h4 {
+            margin-top: 0;
+            color: #d81e05;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav aria-label="Primary navigation">
+            <div class="container">
+                <div class="nav-left">
+                    <a href="javascript:history.back()" class="nav-back">← Back</a>
+                    <a href="index.html" class="logo">
+                        <img src="public/images/cheers-logo.png" alt="Cheers Liquor Mart Logo">
+                        <span class="sr-only">Cheers Liquor Mart</span>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="policies.html">Policies</a>
+                    <a href="events.html">Events</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="incident-report.html" class="nav-highlight">Incident Report</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Beverage Education Corner</h1>
+        <p class="subtitle">Enhance your product knowledge to better serve customers and increase sales.</p>
+
+        <div class="education-section">
+            <h2>Wine Education</h2>
+            <p>Understanding wine basics helps you make better recommendations and increase customer satisfaction.</p>
+
+            <div class="quick-fact">
+                <h4>QUICK SELLING TIP</h4>
+                <p>When a customer asks for a good red wine, first ask what price range they're considering. Then suggest options near the top of that range to maximize sales while staying within their budget.</p>
+            </div>
+
+            <div class="resource-cards">
+                <div class="resource-card">
+                    <div class="card-image" style="background-image: url('public/images/wine-types.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Wine Types & Regions</h3>
+                        <p>Learn the major wine varieties, regions, and what makes them unique.</p>
+                        <a href="wine-education.html" class="card-link">Explore Guide →</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="card-image" style="background-image: url('public/images/wine-pairing.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Food & Wine Pairing</h3>
+                        <p>Master the basics of food pairing to help customers complete their meal plans.</p>
+                        <a href="food-wine-pairing.html" class="card-link">View Pairings →</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="card-image" style="background-image: url('public/images/wine-terms.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Wine Terminology</h3>
+                        <p>Understand common wine terms that will help you sound knowledgeable with customers.</p>
+                        <a href="wine-terminology.html" class="card-link">Learn Terms →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="education-section">
+            <h2>Beer Education</h2>
+            <p>Craft beer continues to grow in popularity. Knowing the basics will help you guide customers to their perfect brew.</p>
+
+            <div class="quick-fact">
+                <h4>QUICK SELLING TIP</h4>
+                <p>If a customer knows they like a particular style (like IPAs), suggest a local craft option at a slightly higher price point for a "special occasion upgrade."</p>
+            </div>
+
+            <div class="resource-cards">
+                <div class="resource-card">
+                    <div class="card-image" style="background-image: url('public/images/beer-styles.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Beer Styles Guide</h3>
+                        <p>From lagers to stouts, learn the characteristics of major beer styles.</p>
+                        <a href="beer-styles.html" class="card-link">View Styles →</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="card-image" style="background-image: url('public/images/beer-local.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Local Brewery Highlights</h3>
+                        <p>Learn about our local breweries to help customers support local businesses.</p>
+                        <a href="local-breweries.html" class="card-link">Explore Local →</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="card-image" style="background-image: url('public/images/beer-glassware.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Beer Glassware & Serving</h3>
+                        <p>Understand proper glassware and serving temperatures for different beer styles.</p>
+                        <a href="beer-glassware.html" class="card-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="education-section">
+            <h2>Spirits Education</h2>
+            <p>From bourbon to tequila, understanding spirits categories helps you guide customers to quality products.</p>
+
+            <div class="quick-fact">
+                <h4>QUICK SELLING TIP</h4>
+                <p>Always suggest a mixer or cocktail component to go with spirit purchases: "That bourbon goes perfectly with our old-fashioned mix for an easy cocktail at home."</p>
+            </div>
+
+            <div class="resource-cards">
+                <div class="resource-card">
+                    <div class="card-image" style="background-image: url('public/images/whiskey-types.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Whiskey 101</h3>
+                        <p>Learn the differences between bourbon, scotch, rye, and other whiskey types.</p>
+                        <a href="whiskey-education.html" class="card-link">Explore Whiskey →</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="card-image" style="background-image: url('public/images/cocktails.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Essential Cocktails</h3>
+                        <p>Know basic recipes for popular cocktails to help customers gather ingredients.</p>
+                        <a href="#" class="card-link">View Recipes →</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="card-image" style="background-image: url('public/images/tequila-mezcal.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Tequila & Mezcal</h3>
+                        <p>Understand the production, categories, and quality indicators for agave spirits.</p>
+                        <a href="tequila-mezcal.html" class="card-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="education-section">
+            <h2>Sales Training Videos</h2>
+            <p>Watch these short training videos to improve your product knowledge and selling techniques.</p>
+
+            <div class="resource-cards">
+                <div class="resource-card">
+                    <div class="card-image" style="background-image: url('public/images/upselling.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Effective Upselling Techniques</h3>
+                        <p>Learn how to suggest premium products naturally without being pushy.</p>
+                        <a href="#" class="card-link">Watch Video →</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="card-image" style="background-image: url('public/images/customer-questions.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Answering Common Questions</h3>
+                        <p>Practice responses to the questions customers ask most frequently.</p>
+                        <a href="#" class="card-link">Watch Video →</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="card-image" style="background-image: url('public/images/product-recommendations.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Making Product Recommendations</h3>
+                        <p>Learn how to match customer preferences with the perfect product.</p>
+                        <a href="#" class="card-link">Watch Video →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Contact</h3>
+                    <p>123 Main Street</p>
+                    <p>Your City, State 12345</p>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div>
+                    <h3>Hours</h3>
+                    <p>Mon-Fri: 9:00 AM - 9:00 PM</p>
+                    <p>Saturday: 10:00 AM - 8:00 PM</p>
+                    <p>Sunday: 11:00 AM - 6:00 PM</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="policies.html">Company Policies</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                        <li><a href="resources.html">Employee Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cheers Liquor Mart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

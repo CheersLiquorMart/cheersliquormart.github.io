@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beer Styles Guide for Cheers Liquor Mart employees - Learn about major beer styles to better serve customers.">
+    <meta name="theme-color" content="#d81e05">
+    <title>Beer Styles Guide - Cheers Liquor Mart</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .style-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .style-section h2 {
+            color: #065f46;
+            margin-bottom: 1rem;
+        }
+
+        .style-section h3 {
+            color: #065f46;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        .beer-style-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+        }
+
+        .beer-style-header {
+            background-color: #f3f4f6;
+            padding: 0.75rem 1rem;
+            font-weight: 600;
+            color: #065f46;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .beer-style-content {
+            padding: 1rem;
+        }
+
+        .style-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 0.5rem;
+            margin: 1rem 0;
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 6px;
+        }
+
+        .style-stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #065f46;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #6b7280;
+        }
+
+        .examples {
+            margin-top: 1rem;
+        }
+
+        .examples strong {
+            color: #065f46;
+        }
+
+        .style-tip {
+            background-color: #f3f4f6;
+            border-left: 4px solid #d81e05;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .style-tip h4 {
+            margin-top: 0;
+            color: #d81e05;
+        }
+
+        .style-color {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 8px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .pale-color {
+            background: linear-gradient(to right, #f9e4b7, #f6d77b);
+        }
+
+        .amber-color {
+            background: linear-gradient(to right, #d3741e, #b35511);
+        }
+
+        .brown-color {
+            background: linear-gradient(to right, #8b572a, #653d1b);
+        }
+
+        .dark-color {
+            background: linear-gradient(to right, #3d2b1f, #1e1510);
+        }
+
+        .flavor-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .flavor-tag {
+            background-color: #f3f4f6;
+            padding: 0.25rem 0.5rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            color: #374151;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav aria-label="Primary navigation">
+            <div class="container">
+                <div class="nav-left">
+                    <a href="javascript:history.back()" class="nav-back">← Back</a>
+                    <a href="index.html" class="logo">
+                        <img src="public/images/cheers-logo.png" alt="Cheers Liquor Mart Logo">
+                        <span class="sr-only">Cheers Liquor Mart</span>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="policies.html">Policies</a>
+                    <a href="events.html">Events</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="incident-report.html" class="nav-highlight">Incident Report</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Cheers Liquor Mart</h1>
+        <h2>Beer Styles Guide</h2>
+        <p class="subtitle">From lagers to stouts, learn the characteristics of major beer styles to better serve your customers.</p>
+
+        <div class="style-section">
+            <h2>Why Beer Styles Matter</h2>
+            <p>Understanding beer styles helps you guide customers to beers they'll enjoy based on their taste preferences. This guide covers the major beer families and their most popular styles, with key characteristics to help you make knowledgeable recommendations.</p>
+
+            <div class="style-tip">
+                <h4>QUICK SELLING TIP</h4>
+                <p>When a customer is unfamiliar with craft beer, ask about other beverages they enjoy. Wine drinkers might appreciate Belgian styles, cocktail fans often enjoy IPAs, and coffee lovers frequently enjoy stouts and porters.</p>
+            </div>
+        </div>
+
+        <div class="style-section">
+            <h2>Lagers</h2>
+            <p>Lagers are crisp, clean beers fermented with bottom-fermenting yeast at cold temperatures. They're often lighter in flavor and color than ales.</p>
+
+            <div class="beer-style-card">
+                <div class="beer-style-header">
+                    <div><span class="style-color pale-color"></span>American Lager</div>
+                </div>
+                <div class="beer-style-content">
+                    <p>Light, crisp, and highly carbonated. The most widely consumed beer style in the U.S.</p>
+
+                    <div class="style-stats">
+                        <div class="style-stat">
+                            <div class="stat-value">4-5%</div>
+                            <div class="stat-label">ABV</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Low</div>
+                            <div class="stat-label">Bitterness</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Light</div>
+                            <div class="stat-label">Body</div>
+                        </div>
+                    </div>
+
+                    <div class="flavor-tags">
+                        <span class="flavor-tag">Crisp</span>
+                        <span class="flavor-tag">Clean</span>
+                        <span class="flavor-tag">Subtle Grain</span>
+                        <span class="flavor-tag">Light-Bodied</span>
+                    </div>
+
+                    <div class="examples">
+                        <strong>Common Examples:</strong> Budweiser, Coors, Miller Lite
+                    </div>
+                </div>
+            </div>
+
+            <div class="beer-style-card">
+                <div class="beer-style-header">
+                    <div><span class="style-color pale-color"></span>Pilsner</div>
+                </div>
+                <div class="beer-style-content">
+                    <p>A crisp, refreshing style with more pronounced hop character than American lagers. Can be Czech (more malt) or German (more hops) in origin.</p>
+
+                    <div class="style-stats">
+                        <div class="style-stat">
+                            <div class="stat-value">4-5.5%</div>
+                            <div class="stat-label">ABV</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Medium</div>
+                            <div class="stat-label">Bitterness</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Light</div>
+                            <div class="stat-label">Body</div>
+                        </div>
+                    </div>
+
+                    <div class="flavor-tags">
+                        <span class="flavor-tag">Crisp</span>
+                        <span class="flavor-tag">Floral Hops</span>
+                        <span class="flavor-tag">Clean Malt</span>
+                        <span class="flavor-tag">Refreshing</span>
+                    </div>
+
+                    <div class="examples">
+                        <strong>Common Examples:</strong> Pilsner Urquell, Victory Prima Pils, Bitburger
+                    </div>
+                </div>
+            </div>
+
+            <div class="beer-style-card">
+                <div class="beer-style-header">
+                    <div><span class="style-color amber-color"></span>Vienna Lager / Märzen</div>
+                </div>
+                <div class="beer-style-content">
+                    <p>Amber lagers with a toasty malt character. Märzen is traditionally served at Oktoberfest.</p>
+
+                    <div class="style-stats">
+                        <div class="style-stat">
+                            <div class="stat-value">5-6%</div>
+                            <div class="stat-label">ABV</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Low-Med</div>
+                            <div class="stat-label">Bitterness</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Medium</div>
+                            <div class="stat-label">Body</div>
+                        </div>
+                    </div>
+
+                    <div class="flavor-tags">
+                        <span class="flavor-tag">Toasty</span>
+                        <span class="flavor-tag">Bready</span>
+                        <span class="flavor-tag">Caramel</span>
+                        <span class="flavor-tag">Clean Finish</span>
+                    </div>
+
+                    <div class="examples">
+                        <strong>Common Examples:</strong> Samuel Adams Octoberfest, Dos Equis Amber, Great Lakes Eliot Ness
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="style-section">
+            <h2>Ales</h2>
+            <p>Ales use top-fermenting yeast at warmer temperatures, creating more complex flavor profiles than lagers. They range from light to dark and mild to intense.</p>
+
+            <div class="beer-style-card">
+                <div class="beer-style-header">
+                    <div><span class="style-color pale-color"></span>Pale Ale</div>
+                </div>
+                <div class="beer-style-content">
+                    <p>Medium-bodied with prominent hop flavor and a balanced malt character. American versions are usually hoppier than British.</p>
+
+                    <div class="style-stats">
+                        <div class="style-stat">
+                            <div class="stat-value">4.5-6%</div>
+                            <div class="stat-label">ABV</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Medium</div>
+                            <div class="stat-label">Bitterness</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Medium</div>
+                            <div class="stat-label">Body</div>
+                        </div>
+                    </div>
+
+                    <div class="flavor-tags">
+                        <span class="flavor-tag">Hoppy</span>
+                        <span class="flavor-tag">Floral</span>
+                        <span class="flavor-tag">Citrus</span>
+                        <span class="flavor-tag">Balanced Malt</span>
+                    </div>
+
+                    <div class="examples">
+                        <strong>Common Examples:</strong> Sierra Nevada Pale Ale, Deschutes Mirror Pond, Bass Ale
+                    </div>
+                </div>
+            </div>
+
+            <div class="beer-style-card">
+                <div class="beer-style-header">
+                    <div><span class="style-color pale-color"></span>India Pale Ale (IPA)</div>
+                </div>
+                <div class="beer-style-content">
+                    <p>Highly hopped beer with intense hop aromas and flavors. Multiple substyles include West Coast (bitter, citrusy), New England/Hazy (juicy, less bitter), and Session (lower alcohol).</p>
+
+                    <div class="style-stats">
+                        <div class="style-stat">
+                            <div class="stat-value">6-7.5%</div>
+                            <div class="stat-label">ABV</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">High</div>
+                            <div class="stat-label">Bitterness</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Med-Full</div>
+                            <div class="stat-label">Body</div>
+                        </div>
+                    </div>
+
+                    <div class="flavor-tags">
+                        <span class="flavor-tag">Intense Hops</span>
+                        <span class="flavor-tag">Citrus</span>
+                        <span class="flavor-tag">Pine</span>
+                        <span class="flavor-tag">Tropical Fruit</span>
+                    </div>
+
+                    <div class="examples">
+                        <strong>Common Examples:</strong> Stone IPA, Bell's Two Hearted, Lagunitas IPA
+                    </div>
+                </div>
+            </div>
+
+            <div class="beer-style-card">
+                <div class="beer-style-header">
+                    <div><span class="style-color amber-color"></span>Amber/Red Ale</div>
+                </div>
+                <div class="beer-style-content">
+                    <p>A balanced style with toasty, caramel malt flavors and moderate hop presence.</p>
+
+                    <div class="style-stats">
+                        <div class="style-stat">
+                            <div class="stat-value">5-6.5%</div>
+                            <div class="stat-label">ABV</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Medium</div>
+                            <div class="stat-label">Bitterness</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Medium</div>
+                            <div class="stat-label">Body</div>
+                        </div>
+                    </div>
+
+                    <div class="flavor-tags">
+                        <span class="flavor-tag">Caramel</span>
+                        <span class="flavor-tag">Toasty</span>
+                        <span class="flavor-tag">Balanced</span>
+                        <span class="flavor-tag">Slight Fruitiness</span>
+                    </div>
+
+                    <div class="examples">
+                        <strong>Common Examples:</strong> New Belgium Fat Tire, Bell's Amber Ale, Tröegs Nugget Nectar
+                    </div>
+                </div>
+            </div>
+
+            <div class="beer-style-card">
+                <div class="beer-style-header">
+                    <div><span class="style-color brown-color"></span>Brown Ale</div>
+                </div>
+                <div class="beer-style-content">
+                    <p>Malt-forward style with flavors of chocolate, nuts, and caramel. English versions tend to be more nutty while American versions can be hoppier.</p>
+
+                    <div class="style-stats">
+                        <div class="style-stat">
+                            <div class="stat-value">4.5-6%</div>
+                            <div class="stat-label">ABV</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Low-Med</div>
+                            <div class="stat-label">Bitterness</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Medium</div>
+                            <div class="stat-label">Body</div>
+                        </div>
+                    </div>
+
+                    <div class="flavor-tags">
+                        <span class="flavor-tag">Nutty</span>
+                        <span class="flavor-tag">Chocolate</span>
+                        <span class="flavor-tag">Caramel</span>
+                        <span class="flavor-tag">Toasted Bread</span>
+                    </div>
+
+                    <div class="examples">
+                        <strong>Common Examples:</strong> Newcastle Brown Ale, Samuel Smith Nut Brown Ale, Avery Ellie's Brown Ale
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="style-section">
+            <h2>Dark Beers</h2>
+            <p>Dark beers feature roasted malts that contribute deep colors and flavors ranging from chocolate to coffee.</p>
+
+            <div class="beer-style-card">
+                <div class="beer-style-header">
+                    <div><span class="style-color dark-color"></span>Porter</div>
+                </div>
+                <div class="beer-style-content">
+                    <p>Dark ale with moderate roasted character. Generally lighter and less intense than stouts.</p>
+
+                    <div class="style-stats">
+                        <div class="style-stat">
+                            <div class="stat-value">5-6.5%</div>
+                            <div class="stat-label">ABV</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Medium</div>
+                            <div class="stat-label">Bitterness</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Med-Full</div>
+                            <div class="stat-label">Body</div>
+                        </div>
+                    </div>
+
+                    <div class="flavor-tags">
+                        <span class="flavor-tag">Chocolate</span>
+                        <span class="flavor-tag">Toffee</span>
+                        <span class="flavor-tag">Caramel</span>
+                        <span class="flavor-tag">Light Roast</span>
+                    </div>
+
+                    <div class="examples">
+                        <strong>Common Examples:</strong> Deschutes Black Butte Porter, Great Lakes Edmund Fitzgerald, Founders Porter
+                    </div>
+                </div>
+            </div>
+
+            <div class="beer-style-card">
+                <div class="beer-style-header">
+                    <div><span class="style-color dark-color"></span>Stout</div>
+                </div>
+                <div class="beer-style-content">
+                    <p>Dark, roasty ale with flavors of coffee and chocolate. Many variations exist, including Dry Irish, Sweet/Milk, Oatmeal, and Imperial.</p>
+
+                    <div class="style-stats">
+                        <div class="style-stat">
+                            <div class="stat-value">4-12%</div>
+                            <div class="stat-label">ABV</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Med-High</div>
+                            <div class="stat-label">Bitterness</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Full</div>
+                            <div class="stat-label">Body</div>
+                        </div>
+                    </div>
+
+                    <div class="flavor-tags">
+                        <span class="flavor-tag">Coffee</span>
+                        <span class="flavor-tag">Dark Chocolate</span>
+                        <span class="flavor-tag">Roasty</span>
+                        <span class="flavor-tag">Creamy</span>
+                    </div>
+
+                    <div class="examples">
+                        <strong>Common Examples:</strong> Guinness Draught (Dry Irish), Left Hand Milk Stout (Sweet), North Coast Old Rasputin (Imperial)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="style-section">
+            <h2>Wheat Beers</h2>
+            <p>Beers brewed with significant proportions of wheat in addition to barley malt, creating a lighter, sometimes cloudy appearance and distinctive flavors.</p>
+
+            <div class="beer-style-card">
+                <div class="beer-style-header">
+                    <div><span class="style-color pale-color"></span>Hefeweizen</div>
+                </div>
+                <div class="beer-style-content">
+                    <p>German wheat beer with distinctive banana and clove flavors from the yeast. Cloudy appearance due to suspended yeast.</p>
+
+                    <div class="style-stats">
+                        <div class="style-stat">
+                            <div class="stat-value">4.5-5.5%</div>
+                            <div class="stat-label">ABV</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Low</div>
+                            <div class="stat-label">Bitterness</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Medium</div>
+                            <div class="stat-label">Body</div>
+                        </div>
+                    </div>
+
+                    <div class="flavor-tags">
+                        <span class="flavor-tag">Banana</span>
+                        <span class="flavor-tag">Clove</span>
+                        <span class="flavor-tag">Wheat</span>
+                        <span class="flavor-tag">Bready</span>
+                    </div>
+
+                    <div class="examples">
+                        <strong>Common Examples:</strong> Weihenstephaner Hefeweissbier, Paulaner Hefe-Weizen, Sierra Nevada Kellerweis
+                    </div>
+                </div>
+            </div>
+
+            <div class="beer-style-card">
+                <div class="beer-style-header">
+                    <div><span class="style-color pale-color"></span>American Wheat</div>
+                </div>
+                <div class="beer-style-content">
+                    <p>Lighter, cleaner wheat beer without the banana/clove notes of German styles. Often more hop-forward.</p>
+
+                    <div class="style-stats">
+                        <div class="style-stat">
+                            <div class="stat-value">4.5-5.5%</div>
+                            <div class="stat-label">ABV</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Low-Med</div>
+                            <div class="stat-label">Bitterness</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Light-Med</div>
+                            <div class="stat-label">Body</div>
+                        </div>
+                    </div>
+
+                    <div class="flavor-tags">
+                        <span class="flavor-tag">Crisp</span>
+                        <span class="flavor-tag">Light Citrus</span>
+                        <span class="flavor-tag">Wheat Bread</span>
+                        <span class="flavor-tag">Refreshing</span>
+                    </div>
+
+                    <div class="examples">
+                        <strong>Common Examples:</strong> Bell's Oberon, Boulevard Unfiltered Wheat, Three Floyds Gumballhead
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="style-section">
+            <h2>Belgian & Specialty Beers</h2>
+            <p>Belgian beers often feature unique yeast strains that create complex, fruity, and spicy flavors. The category also includes sour beers and specialty styles.</p>
+
+            <div class="beer-style-card">
+                <div class="beer-style-header">
+                    <div><span class="style-color pale-color"></span>Belgian Witbier</div>
+                </div>
+                <div class="beer-style-content">
+                    <p>Light, refreshing wheat beer spiced with coriander and orange peel. Typically cloudy with a creamy mouthfeel.</p>
+
+                    <div class="style-stats">
+                        <div class="style-stat">
+                            <div class="stat-value">4.5-5.5%</div>
+                            <div class="stat-label">ABV</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Low</div>
+                            <div class="stat-label">Bitterness</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Medium</div>
+                            <div class="stat-label">Body</div>
+                        </div>
+                    </div>
+
+                    <div class="flavor-tags">
+                        <span class="flavor-tag">Orange Peel</span>
+                        <span class="flavor-tag">Coriander</span>
+                        <span class="flavor-tag">Wheat</span>
+                        <span class="flavor-tag">Peppery</span>
+                    </div>
+
+                    <div class="examples">
+                        <strong>Common Examples:</strong> Hoegaarden, Allagash White, Blue Moon Belgian White
+                    </div>
+                </div>
+            </div>
+
+            <div class="beer-style-card">
+                <div class="beer-style-header">
+                    <div><span class="style-color amber-color"></span>Belgian Dubbel</div>
+                </div>
+                <div class="beer-style-content">
+                    <p>Dark amber to brown abbey-style ale with rich malt flavors and complex fruit and spice notes.</p>
+
+                    <div class="style-stats">
+                        <div class="style-stat">
+                            <div class="stat-value">6-7.5%</div>
+                            <div class="stat-label">ABV</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Low-Med</div>
+                            <div class="stat-label">Bitterness</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Medium</div>
+                            <div class="stat-label">Body</div>
+                        </div>
+                    </div>
+
+                    <div class="flavor-tags">
+                        <span class="flavor-tag">Dark Fruit</span>
+                        <span class="flavor-tag">Caramel</span>
+                        <span class="flavor-tag">Clove</span>
+                        <span class="flavor-tag">Raisin</span>
+                    </div>
+
+                    <div class="examples">
+                        <strong>Common Examples:</strong> Chimay Red, Westmalle Dubbel, Ommegang Abbey Ale
+                    </div>
+                </div>
+            </div>
+
+            <div class="beer-style-card">
+                <div class="beer-style-header">
+                    <div><span class="style-color pale-color"></span>Belgian Tripel</div>
+                </div>
+                <div class="beer-style-content">
+                    <p>Strong, golden abbey-style ale with complex fruit and spice character. Surprisingly light body for its strength.</p>
+
+                    <div class="style-stats">
+                        <div class="style-stat">
+                            <div class="stat-value">7.5-9.5%</div>
+                            <div class="stat-label">ABV</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Medium</div>
+                            <div class="stat-label">Bitterness</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Med-Full</div>
+                            <div class="stat-label">Body</div>
+                        </div>
+                    </div>
+
+                    <div class="flavor-tags">
+                        <span class="flavor-tag">Fruity</span>
+                        <span class="flavor-tag">Spicy</span>
+                        <span class="flavor-tag">Pear</span>
+                        <span class="flavor-tag">Peppery</span>
+                    </div>
+
+                    <div class="examples">
+                        <strong>Common Examples:</strong> Westmalle Tripel, La Fin Du Monde, Victory Golden Monkey
+                    </div>
+                </div>
+            </div>
+
+            <div class="beer-style-card">
+                <div class="beer-style-header">
+                    <div><span class="style-color amber-color"></span>Sour Beers</div>
+                </div>
+                <div class="beer-style-content">
+                    <p>A broad category featuring deliberate acidity. Includes traditional styles like Lambic, Flanders Red, and Gose, plus modern American sours.</p>
+
+                    <div class="style-stats">
+                        <div class="style-stat">
+                            <div class="stat-value">3-8%</div>
+                            <div class="stat-label">ABV</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Varies</div>
+                            <div class="stat-label">Bitterness</div>
+                        </div>
+                        <div class="style-stat">
+                            <div class="stat-value">Varies</div>
+                            <div class="stat-label">Body</div>
+                        </div>
+                    </div>
+
+                    <div class="flavor-tags">
+                        <span class="flavor-tag">Tart</span>
+                        <span class="flavor-tag">Fruity</span>
+                        <span class="flavor-tag">Funky</span>
+                        <span class="flavor-tag">Complex</span>
+                    </div>
+
+                    <div class="examples">
+                        <strong>Common Examples:</strong> Rodenbach Grand Cru (Flanders Red), Lindemans Framboise (Fruit Lambic), Sierra Nevada Otra Vez (Gose)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="style-section">
+            <h2>Customer Recommendation Guide</h2>
+            <p>Use these suggestions to help recommend beers based on customer preferences:</p>
+
+            <div class="style-tip">
+                <h4>FOR WINE DRINKERS</h4>
+                <p><strong>Red Wine Lovers:</strong> Belgian Dubbel, Flanders Red Ale, Brown Ale, Porter</p>
+                <p><strong>White Wine Lovers:</strong> Belgian Witbier, Hefeweizen, Berliner Weisse, Saison</p>
+            </div>
+
+            <div class="style-tip">
+                <h4>FOR SPIRITS DRINKERS</h4>
+                <p><strong>Whiskey Fans:</strong> Barrel-aged Stouts, Scotch Ale, Old Ale</p>
+                <p><strong>Vodka/Gin Drinkers:</strong> Pilsner, Kölsch, American Wheat, Session IPA</p>
+            </div>
+
+            <div class="style-tip">
+                <h4>FOR BEGINNERS</h4>
+                <p><strong>Gateway Craft Beers:</strong> Wheat Ales, Amber Ales, Blonde Ales, Fruit-infused styles</p>
+            </div>
+
+            <h3>Seasonal Recommendations</h3>
+            <ul>
+                <li><strong>Spring:</strong> Maibock, Saison, Kölsch, Pale Ale</li>
+                <li><strong>Summer:</strong> Wheat Beers, Session IPA, Pilsner, Gose</li>
+                <li><strong>Fall:</strong> Märzen/Oktoberfest, Brown Ale, Pumpkin Ale, Amber Ale</li>
+                <li><strong>Winter:</strong> Stouts, Porters, Winter Warmer, Belgian Strong Ales, Barleywine</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Contact</h3>
+                    <p>123 Main Street</p>
+                    <p>Your City, State 12345</p>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div>
+                    <h3>Hours</h3>
+                    <p>Mon-Fri: 9:00 AM - 9:00 PM</p>
+                    <p>Saturday: 10:00 AM - 8:00 PM</p>
+                    <p>Sunday: 11:00 AM - 6:00 PM</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="policies.html">Company Policies</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                        <li><a href="resources.html">Employee Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cheers Liquor Mart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

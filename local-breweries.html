@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Local Brewery Highlights for Cheers Liquor Mart employees - Learn about local breweries to help customers support local businesses.">
+    <meta name="theme-color" content="#d81e05">
+    <title>Local Brewery Highlights - Cheers Liquor Mart</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .brewery-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .brewery-section h2 {
+            color: #065f46;
+            margin-bottom: 1rem;
+        }
+
+        .brewery-section h3 {
+            color: #065f46;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        .brewery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .brewery-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .brewery-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .brewery-image {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .brewery-content {
+            padding: 1rem;
+        }
+
+        .brewery-content h4 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            color: #065f46;
+        }
+
+        .brewery-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+
+        .flagship-beers {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .flagship-beers h5 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            color: #374151;
+            font-size: 0.9rem;
+        }
+
+        .beer-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .beer-list li {
+            position: relative;
+            padding-left: 1.25rem;
+            margin-bottom: 0.25rem;
+            font-size: 0.875rem;
+        }
+
+        .beer-list li:before {
+            content: "🍺";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 0.75rem;
+        }
+
+        .selling-tip {
+            margin-top: 0.75rem;
+            font-style: italic;
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+
+        .brewery-tip {
+            background-color: #f3f4f6;
+            border-left: 4px solid #d81e05;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .brewery-tip h4 {
+            margin-top: 0;
+            color: #d81e05;
+        }
+
+        .brewery-map {
+            width: 100%;
+            height: 400px;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+            margin: 1.5rem 0;
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 0.5rem 0;
+        }
+
+        .brewery-tag {
+            background-color: #f3f4f6;
+            padding: 0.25rem 0.5rem;
+            border-radius: 999px;
+            font-size: 0.7rem;
+            color: #374151;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav aria-label="Primary navigation">
+            <div class="container">
+                <div class="nav-left">
+                    <a href="javascript:history.back()" class="nav-back">← Back</a>
+                    <a href="index.html" class="logo">
+                        <img src="public/images/cheers-logo.png" alt="Cheers Liquor Mart Logo">
+                        <span class="sr-only">Cheers Liquor Mart</span>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="policies.html">Policies</a>
+                    <a href="events.html">Events</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="incident-report.html" class="nav-highlight">Incident Report</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Cheers Liquor Mart</h1>
+        <h2>Local Brewery Highlights</h2>
+        <p class="subtitle">Learn about our local breweries to help customers support local businesses and find their new favorite craft beers.</p>
+
+        <div class="brewery-section">
+            <h2>Why Local Matters</h2>
+            <p>Supporting local breweries benefits our community in several ways. Local breweries create jobs, contribute to tourism, often use environmentally sustainable practices, and help develop unique regional flavors and brewing traditions. Many customers specifically seek out local options to support their community.</p>
+
+            <div class="brewery-tip">
+                <h4>QUICK SELLING TIP</h4>
+                <p>When customers are browsing the craft beer section, ask if they've tried any of our local breweries' offerings. Mention that "drinking local" supports our community's economy and provides fresher beer, since it doesn't travel as far from production to consumption.</p>
+            </div>
+
+            <h3>Local Brewery Map</h3>
+            <div class="brewery-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d49193.72642294079!2d-104.80961534179688!3d38.84099709647962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1683756276436!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="brewery-section">
+            <h2>Featured Breweries</h2>
+            <p>These local breweries have established themselves as cornerstones of our craft beer scene. Learn about their stories, specialties, and flagship beers to better guide your customers.</p>
+
+            <div class="brewery-grid">
+                <div class="brewery-card">
+                    <div class="brewery-image" style="background-image: url('public/images/bristol-brewing.jpg');"></div>
+                    <div class="brewery-content">
+                        <div class="brewery-meta">
+                            <span>Est. 1994</span>
+                            <span>5.2 miles away</span>
+                        </div>
+                        <h4>Bristol Brewing Company</h4>
+                        <p>Family-owned brewery located in the historic Ivywild School, specializing in consistent, quality ales and lagers with a strong community focus.</p>
+
+                        <div class="tag-list">
+                            <span class="brewery-tag">Family-Owned</span>
+                            <span class="brewery-tag">Taproom</span>
+                            <span class="brewery-tag">Food Available</span>
+                            <span class="brewery-tag">Dog-Friendly</span>
+                        </div>
+
+                        <div class="flagship-beers">
+                            <h5>Flagship Beers We Carry:</h5>
+                            <ul class="beer-list">
+                                <li>Laughing Lab Scottish Ale - Award-winning amber ale with caramel notes</li>
+                                <li>Beehive Honey Wheat - Light, crisp wheat beer with local honey</li>
+                                <li>Mass Transit Ale - Amber ale with balanced hops and malt</li>
+                                <li>Compass IPA - West Coast-style IPA with pine and citrus notes</li>
+                            </ul>
+                            <p class="selling-tip">Laughing Lab is their most popular beer and has won multiple GABF medals. Great for customers who find IPAs too bitter.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brewery-card">
+                    <div class="brewery-image" style="background-image: url('public/images/red-leg-brewing.jpg');"></div>
+                    <div class="brewery-content">
+                        <div class="brewery-meta">
+                            <span>Est. 2013</span>
+                            <span>4.8 miles away</span>
+                        </div>
+                        <h4>Red Leg Brewing Company</h4>
+                        <p>Military-themed brewery founded by a veteran, with a spacious new facility featuring a beer garden and food hall.</p>
+
+                        <div class="tag-list">
+                            <span class="brewery-tag">Veteran-Owned</span>
+                            <span class="brewery-tag">Taproom</span>
+                            <span class="brewery-tag">Food Hall</span>
+                            <span class="brewery-tag">Outdoor Seating</span>
+                        </div>
+
+                        <div class="flagship-beers">
+                            <h5>Flagship Beers We Carry:</h5>
+                            <ul class="beer-list">
+                                <li>Blue Nose Brown - Smooth brown ale with chocolate and toffee notes</li>
+                                <li>Howitzer Amber - Balanced amber ale with caramel sweetness</li>
+                                <li>Devil Dog Stout - Dry Irish-style stout with coffee and chocolate flavors</li>
+                                <li>Cutter Wit - Refreshing Belgian-style witbier with orange and coriander</li>
+                            </ul>
+                            <p class="selling-tip">Mention the military connection for service members or veterans looking for local beer options.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brewery-card">
+                    <div class="brewery-image" style="background-image: url('public/images/cerberus-brewing.jpg');"></div>
+                    <div class="brewery-content">
+                        <div class="brewery-meta">
+                            <span>Est. 2016</span>
+                            <span>3.9 miles away</span>
+                        </div>
+                        <h4>Cerberus Brewing Company</h4>
+                        <p>Gastropub-style brewery in a converted auto shop, known for creative beer styles and exceptional food offerings.</p>
+
+                        <div class="tag-list">
+                            <span class="brewery-tag">Gastropub</span>
+                            <span class="brewery-tag">Full Restaurant</span>
+                            <span class="brewery-tag">Patio Seating</span>
+                            <span class="brewery-tag">Rotating Taps</span>
+                        </div>
+
+                        <div class="flagship-beers">
+                            <h5>Flagship Beers We Carry:</h5>
+                            <ul class="beer-list">
+                                <li>Elysium IPA - Balanced IPA with tropical fruit notes</li>
+                                <li>NBD Kolsch - Clean, crisp German-style ale</li>
+                                <li>Tiny Umbrella New England IPA - Hazy IPA with low bitterness, high juicy hop flavor</li>
+                                <li>The Viktor Pale Ale - Citrus-forward American pale ale</li>
+                            </ul>
+                            <p class="selling-tip">Great suggestion for customers who enjoy dining out - mention they can visit the brewery for excellent food paired with these beers.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brewery-card">
+                    <div class="brewery-image" style="background-image: url('public/images/trinity-brewing.jpg');"></div>
+                    <div class="brewery-content">
+                        <div class="brewery-meta">
+                            <span>Est. 2008</span>
+                            <span>6.3 miles away</span>
+                        </div>
+                        <h4>Trinity Brewing</h4>
+                        <p>Artisanal brewery specializing in farmhouse ales, sour beers, and barrel-aged creations with an environmentally conscious approach.</p>
+
+                        <div class="tag-list">
+                            <span class="brewery-tag">Artisanal</span>
+                            <span class="brewery-tag">Sour Specialists</span>
+                            <span class="brewery-tag">Eco-Friendly</span>
+                            <span class="brewery-tag">Vegetarian Options</span>
+                        </div>
+
+                        <div class="flagship-beers">
+                            <h5>Flagship Beers We Carry:</h5>
+                            <ul class="beer-list">
+                                <li>Elektrick Cukumbahh - Cucumber saison, refreshing farmhouse ale</li>
+                                <li>7 Day Sour - Approachable, kettle-soured beer with fruit variations</li>
+                                <li>Red Swingline IPA - Citrusy IPA with brettanomyces character</li>
+                                <li>Magical Brettanomyces Tour - Farmhouse series showcasing wild yeast</li>
+                            </ul>
+                            <p class="selling-tip">Recommend to experienced craft beer fans looking for something unique or to wine drinkers who might appreciate the complexity of Trinity's sours.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brewery-card">
+                    <div class="brewery-image" style="background-image: url('public/images/phantom-canyon.jpg');"></div>
+                    <div class="brewery-content">
+                        <div class="brewery-meta">
+                            <span>Est. 1993</span>
+                            <span>7.1 miles away</span>
+                        </div>
+                        <h4>Phantom Canyon Brewing Co.</h4>
+                        <p>Downtown brewpub in a historic building, one of the city's original craft breweries offering diverse beer styles and full restaurant service.</p>
+
+                        <div class="tag-list">
+                            <span class="brewery-tag">Historic Building</span>
+                            <span class="brewery-tag">Full Restaurant</span>
+                            <span class="brewery-tag">Pool Tables</span>
+                            <span class="brewery-tag">Multi-Level</span>
+                        </div>
+
+                        <div class="flagship-beers">
+                            <h5>Flagship Beers We Carry:</h5>
+                            <ul class="beer-list">
+                                <li>Alpenglow Amber - Malty amber ale with caramel notes</li>
+                                <li>Queen's Blonde Ale - Crisp, approachable blonde ale</li>
+                                <li>Streamliner IPA - Modern American IPA with citrus hop profile</li>
+                                <li>Two Step Hefeweizen - Traditional German wheat beer</li>
+                            </ul>
+                            <p class="selling-tip">A good recommendation for visitors or newcomers to the area due to its historical significance and downtown location.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brewery-card">
+                    <div class="brewery-image" style="background-image: url('public/images/pikes-peak-brewing.jpg');"></div>
+                    <div class="brewery-content">
+                        <div class="brewery-meta">
+                            <span>Est. 2011</span>
+                            <span>17.2 miles away</span>
+                        </div>
+                        <h4>Pikes Peak Brewing Co.</h4>
+                        <p>Monument-based brewery named after the famous mountain, producing clean, well-crafted beers inspired by local geography.</p>
+
+                        <div class="tag-list">
+                            <span class="brewery-tag">Mountain-Inspired</span>
+                            <span class="brewery-tag">Taproom</span>
+                            <span class="brewery-tag">Live Music</span>
+                            <span class="brewery-tag">Food Trucks</span>
+                        </div>
+
+                        <div class="flagship-beers">
+                            <h5>Flagship Beers We Carry:</h5>
+                            <ul class="beer-list">
+                                <li>Devil's Head Red - Malty red ale with caramel and light hop bitterness</li>
+                                <li>Gold Rush Belgian - Belgian-style golden ale with fruit and spice notes</li>
+                                <li>Summit House IPA - Bold, pine-forward IPA with a clean finish</li>
+                                <li>Elephant Rock IPA - Juicy New England-style IPA with tropical notes</li>
+                            </ul>
+                            <p class="selling-tip">Their mountain-named beers are great for visitors looking to bring home a taste of Colorado's outdoor culture.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="brewery-section">
+            <h2>Emerging Local Breweries</h2>
+            <p>These newer breweries are making a name for themselves in our local craft beer scene and are worth keeping an eye on.</p>
+
+            <div class="brewery-grid">
+                <div class="brewery-card">
+                    <div class="brewery-image" style="background-image: url('public/images/goat-patch.jpg');"></div>
+                    <div class="brewery-content">
+                        <div class="brewery-meta">
+                            <span>Est. 2017</span>
+                            <span>5.3 miles away</span>
+                        </div>
+                        <h4>Goat Patch Brewing</h4>
+                        <p>Community-focused brewery located in the Lincoln Center, known for well-balanced, approachable beers and a welcoming atmosphere.</p>
+
+                        <div class="tag-list">
+                            <span class="brewery-tag">Family-Friendly</span>
+                            <span class="brewery-tag">Community Space</span>
+                            <span class="brewery-tag">Food Available</span>
+                        </div>
+
+                        <div class="flagship-beers">
+                            <h5>Flagship Beers We Carry:</h5>
+                            <ul class="beer-list">
+                                <li>It Takes A Tribe Red Ale - Balanced amber with caramel notes</li>
+                                <li>Tried and True IPA - Approachable IPA with citrus hop character</li>
+                                <li>This Is The Way Hazy IPA - Tropical New England-style IPA</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brewery-card">
+                    <div class="brewery-image" style="background-image: url('public/images/storybook-brewing.jpg');"></div>
+                    <div class="brewery-content">
+                        <div class="brewery-meta">
+                            <span>Est. 2014</span>
+                            <span>4.1 miles away</span>
+                        </div>
+                        <h4>Storybook Brewing</h4>
+                        <p>Small, imaginative brewery creating unique and creative beer recipes in a cozy, fairytale-themed taproom.</p>
+
+                        <div class="tag-list">
+                            <span class="brewery-tag">Unique Recipes</span>
+                            <span class="brewery-tag">Cozy Taproom</span>
+                            <span class="brewery-tag">Fantasy-Themed</span>
+                        </div>
+
+                        <div class="flagship-beers">
+                            <h5>Flagship Beers We Carry:</h5>
+                            <ul class="beer-list">
+                                <li>Little Red's Rocking Ale - Robust red ale with rich malt flavor</li>
+                                <li>Gnomish Beer Garden - Refreshing German-style pilsner</li>
+                                <li>Dragon Breath IPA - Bold IPA with strong hop presence</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brewery-card">
+                    <div class="brewery-image" style="background-image: url('public/images/local-relic.jpg');"></div>
+                    <div class="brewery-content">
+                        <div class="brewery-meta">
+                            <span>Est. 2015</span>
+                            <span>6.9 miles away</span>
+                        </div>
+                        <h4>Local Relic</h4>
+                        <p>Experimental brewery located in the historic Carter Payne church, creating small-batch, unique beers with an emphasis on never repeating recipes.</p>
+
+                        <div class="tag-list">
+                            <span class="brewery-tag">Historic Building</span>
+                            <span class="brewery-tag">Small Batch</span>
+                            <span class="brewery-tag">Experimental</span>
+                            <span class="brewery-tag">Artisanal Food</span>
+                        </div>
+
+                        <div class="flagship-beers">
+                            <h5>Note:</h5>
+                            <p>Local Relic's business model focuses on constant new releases rather than flagship beers. We currently carry their seasonal releases, which change frequently. Check our special releases section for current offerings.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="brewery-section">
+            <h2>Local Seasonal Releases</h2>
+            <p>These special seasonal beers from local breweries are available in limited quantities and are highly anticipated by craft beer enthusiasts.</p>
+
+            <div class="brewery-tip">
+                <h4>SEASONAL SELLING TIP</h4>
+                <p>For customers interested in local beer, mention our seasonal local releases calendar. Let them know they can sign up for notifications when special releases arrive, creating urgency and encouraging repeat visits.</p>
+            </div>
+
+            <h3>Spring/Summer Seasonals (Currently Available)</h3>
+            <ul>
+                <li><strong>Bristol Brewing - Summer Sunshine Wheat</strong> - Limited summer wheat beer with citrus notes</li>
+                <li><strong>Red Leg - Lowrider Lime Lager</strong> - Mexican-style lager with lime, perfect for warm weather</li>
+                <li><strong>Cerberus - Apricot Sour</strong> - Seasonal kettle sour with fresh apricots</li>
+                <li><strong>Pikes Peak - Summit House Sunrise IPA</strong> - Special summer IPA with tropical hop varieties</li>
+            </ul>
+
+            <h3>Fall/Winter Seasonals (Coming Soon)</h3>
+            <ul>
+                <li><strong>Bristol - Winter Warlock Oatmeal Stout</strong> - Rich seasonal stout, highly anticipated annual release</li>
+                <li><strong>Trinity - MCMXC Imperial Stout</strong> - Barrel-aged special release with vanilla and cocoa</li>
+                <li><strong>Phantom Canyon - Oktoberfest Märzen</strong> - Traditional German-style fall lager</li>
+                <li><strong>Goat Patch - Cranberry Saison</strong> - Holiday seasonal with tart cranberry notes</li>
+            </ul>
+        </div>
+
+        <div class="brewery-section">
+            <h2>Local Brewery Events & Tours</h2>
+            <p>Many customers are interested in visiting breweries for tours, tastings, and special events. Here's information to help guide their local brewery experiences.</p>
+
+            <h3>Regular Tours Available</h3>
+            <ul>
+                <li><strong>Bristol Brewing</strong> - Saturdays at 2pm, includes history of the Ivywild School building</li>
+                <li><strong>Red Leg Brewing</strong> - Friday evenings at 5pm, reservation recommended</li>
+                <li><strong>Pikes Peak Brewing</strong> - First Saturday of each month, 1pm</li>
+            </ul>
+
+            <h3>Upcoming Special Events</h3>
+            <ul>
+                <li><strong>Local Craft Beer Week</strong> - Various locations, first week of August</li>
+                <li><strong>Bristol Brewing Oktoberfest</strong> - Mid-September, featuring German food and special releases</li>
+                <li><strong>Holiday Beer Festival</strong> - First weekend in December, featuring winter seasonals from all local breweries</li>
+            </ul>
+
+            <h3>Supporting Customer Brewery Visits</h3>
+            <p>We have a collection of local brewery maps and passport programs at the front counter. These are great additions to suggest when customers purchase local craft beer and express interest in visiting the source.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Contact</h3>
+                    <p>123 Main Street</p>
+                    <p>Your City, State 12345</p>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div>
+                    <h3>Hours</h3>
+                    <p>Mon-Fri: 9:00 AM - 9:00 PM</p>
+                    <p>Saturday: 10:00 AM - 8:00 PM</p>
+                    <p>Sunday: 11:00 AM - 6:00 PM</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="policies.html">Company Policies</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                        <li><a href="resources.html">Employee Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cheers Liquor Mart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

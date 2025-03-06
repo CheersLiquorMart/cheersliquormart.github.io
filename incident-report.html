@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Incident Report Form for Cheers Liquor Mart - Report incidents that occur in the store.">
+    <meta name="theme-color" content="#d81e05">
+    <title>Incident Report Form - Cheers Liquor Mart</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Form specific styles */
+        .form-container {
+            max-width: 850px;
+            margin: 0 auto 2rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-title {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 0.5rem;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .report-subtitle {
+            color: #333;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .form-row {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        .form-field {
+            flex: 1;
+            position: relative;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.25rem;
+            font-weight: 600;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 0.5rem;
+            border: none;
+            border-bottom: 1px solid #999;
+            font-family: inherit;
+            font-size: 16px;
+            background: transparent;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .textarea-container {
+            position: relative;
+            background: white;
+        }
+
+        .lined-textarea {
+            width: 100%;
+            min-height: 150px;
+            padding: 0;
+            line-height: 1.9;
+            resize: none;
+            border: none;
+            font-family: inherit;
+            font-size: 16px;
+            background-image: linear-gradient(#999 1px, transparent 1px);
+            background-size: 100% 31px;
+            background-position: 0 28px;
+            overflow: hidden;
+        }
+
+        .lined-textarea:focus {
+            outline: none;
+        }
+
+        .form-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .time-input {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .time-input input {
+            width: 100px;
+        }
+
+        .time-input span {
+            white-space: nowrap;
+        }
+
+        /* Print styles */
+        @media print {
+            header, footer, .form-actions {
+                display: none !important;
+            }
+
+            .form-container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+
+            body, html, .form-container {
+                background: white;
+                font-size: 12pt;
+            }
+
+            .container {
+                width: 100%;
+                max-width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+
+            .form-title {
+                font-size: 24pt;
+            }
+
+            .report-subtitle {
+                font-size: 18pt;
+                margin-bottom: 30pt;
+            }
+
+            input, select {
+                border-bottom: 1px solid #999;
+            }
+
+            .lined-textarea {
+                height: auto !important;
+                min-height: 150px;
+                page-break-inside: avoid;
+            }
+
+            .form-group {
+                margin-bottom: 20pt;
+                page-break-inside: avoid;
+            }
+
+            .form-row {
+                margin-bottom: 20pt;
+                page-break-inside: avoid;
+            }
+        }
+
+        @page {
+            size: letter;
+            margin: 0.5in;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav aria-label="Primary navigation">
+            <div class="container">
+                <div class="nav-left">
+                    <a href="javascript:history.back()" class="nav-back">← Back</a>
+                    <a href="index.html" class="logo">
+                        <img src="public/images/cheers-logo.png" alt="Cheers Liquor Mart Logo">
+                        <span class="sr-only">Cheers Liquor Mart</span>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="policies.html">Policies</a>
+                    <a href="events.html">Events</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="incident-report.html" class="nav-highlight" aria-current="page">Incident Report</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="form-container">
+            <h1 class="form-title">Cheers Liquor Mart</h1>
+            <h2 class="report-subtitle">INCIDENT REPORT</h2>
+
+            <form id="incidentReportForm" action="https://formspree.io/f/your-formspree-id" method="POST">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="incidentType">Incident Type:</label>
+                        <input type="text" id="incidentType" name="incidentType" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="incidentLevel">Level:</label>
+                        <input type="text" id="incidentLevel" name="incidentLevel">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="incidentDate">Date/Time of Incident:</label>
+                        <input type="date" id="incidentDate" name="incidentDate" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="incidentTime">@</label>
+                        <div class="time-input">
+                            <input type="text" id="incidentTime" name="incidentTime">
+                            <span>o'clock</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="incidentLocation">Location in store:</label>
+                    <input type="text" id="incidentLocation" name="incidentLocation" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="employeeReporting">Employee reporting:</label>
+                    <input type="text" id="employeeReporting" name="employeeReporting" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="incidentDescription">Description of Incident:</label>
+                    <div class="textarea-container">
+                        <textarea id="incidentDescription" name="incidentDescription" class="lined-textarea" rows="6" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="actionsTaken">Actions Taken:</label>
+                    <div class="textarea-container">
+                        <textarea id="actionsTaken" name="actionsTaken" class="lined-textarea" rows="5"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="followupRequired">Follow-up Required:</label>
+                    <div class="textarea-container">
+                        <textarea id="followupRequired" name="followupRequired" class="lined-textarea" rows="5"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="window.print()">Print Form</button>
+                    <button type="button" class="btn" onclick="emailForm()">Email Form</button>
+                    <button type="button" class="btn btn-secondary" onclick="saveAsPDF()">Save as PDF</button>
+                    <button type="submit" class="btn">Submit Online</button>
+                    <button type="reset" class="btn btn-secondary">Reset Form</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <address>
+                        123 Main Street<br>
+                        Your City, State 12345<br>
+                        <a href="tel:+15551234567">(555) 123-4567</a>
+                    </address>
+                </div>
+                <div class="footer-hours">
+                    <h3>Hours</h3>
+                    <ul>
+                        <li>Mon-Fri: 9:00 AM - 9:00 PM</li>
+                        <li>Saturday: 10:00 AM - 8:00 PM</li>
+                        <li>Sunday: 11:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <nav aria-label="Footer navigation">
+                        <ul>
+                            <li><a href="policies.html">Company Policies</a></li>
+                            <li><a href="events.html">Upcoming Events</a></li>
+                            <li><a href="resources.html">Employee Resources</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cheers Liquor Mart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Adjust textarea height based on content
+        document.querySelectorAll('.lined-textarea').forEach(textarea => {
+            textarea.addEventListener('input', function() {
+                this.style.height = 'auto';
+                this.style.height = (this.scrollHeight) + 'px';
+            });
+        });
+
+        // Email function - using mailto (simple client-side solution)
+        function emailForm() {
+            const form = document.getElementById('incidentReportForm');
+            const formData = new FormData(form);
+            let emailBody = 'INCIDENT REPORT\n\n';
+
+            for (const [key, value] of formData.entries()) {
+                // Format the key by removing camelCase and adding spaces
+                const formattedKey = key
+                    .replace(/([A-Z])/g, ' $1')
+                    .replace(/^./, str => str.toUpperCase());
+
+                emailBody += `${formattedKey}: ${value}\n`;
+            }
+
+            const subject = 'Cheers Liquor Mart - Incident Report';
+            const mailtoLink = `mailto:manager@cheersliquormart.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+
+            window.location.href = mailtoLink;
+        }
+
+        // Function to save as PDF using html2pdf library
+        function saveAsPDF() {
+            // Check if html2pdf is loaded
+            if (typeof html2pdf === 'undefined') {
+                // If not loaded, fallback to print
+                alert('PDF generation library not loaded. Using print instead.');
+                window.print();
+                return;
+            }
+
+            const element = document.querySelector('.form-container');
+            const opt = {
+                margin: 1,
+                filename: 'cheers-incident-report.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+
+            // Hide buttons during PDF generation
+            const actionButtons = document.querySelector('.form-actions');
+            actionButtons.style.display = 'none';
+
+            // Generate PDF
+            html2pdf().set(opt).from(element).save().then(() => {
+                // Show buttons again after PDF is generated
+                actionButtons.style.display = 'flex';
+            });
+        }
+
+        // Initialize form on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set default date to today
+            document.getElementById('incidentDate').valueAsDate = new Date();
+
+            // Apply autosizing to textareas on load
+            document.querySelectorAll('.lined-textarea').forEach(textarea => {
+                textarea.style.height = 'auto';
+                textarea.style.height = (textarea.scrollHeight) + 'px';
+            });
+
+            // Add event listener for form submission (for Formspree)
+            document.getElementById('incidentReportForm').addEventListener('submit', function(e) {
+                // Only proceed if using Formspree
+                const formAction = this.getAttribute('action');
+                if (!formAction || !formAction.includes('formspree.io')) {
+                    e.preventDefault();
+                    alert('Please replace "your-formspree-id" in the form action with your actual Formspree form ID to enable online submissions.');
+                    return;
+                }
+
+                // If using the default placeholder Formspree ID
+                if (formAction.includes('your-formspree-id')) {
+                    e.preventDefault();
+                    alert('Please replace "your-formspree-id" in the form action with your actual Formspree form ID to enable online submissions.');
+                }
+            });
+        });
+    </script>
+
+    <!-- Load html2pdf.js library for PDF generation (load from CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

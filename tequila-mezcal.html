@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tequila & Mezcal Education for Cheers Liquor Mart employees - Learn about agave spirits to better serve customers.">
+    <meta name="theme-color" content="#d81e05">
+    <title>Tequila & Mezcal Education - Cheers Liquor Mart</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .tequila-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .tequila-section h2 {
+            color: #065f46;
+            margin-bottom: 1rem;
+        }
+
+        .tequila-section h3 {
+            color: #065f46;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        .type-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .type-card {
+            flex: 1;
+            min-width: 250px;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+            background-color: white;
+        }
+
+        .type-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .type-header {
+            padding: 0.75rem;
+            background-color: #065f46;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .type-content {
+            padding: 1rem;
+        }
+
+        .type-content ul {
+            margin-top: 0.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .type-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .process-step {
+            flex: 1;
+            min-width: 200px;
+            background-color: #f3f4f6;
+            border-radius: 8px;
+            padding: 1rem;
+            position: relative;
+        }
+
+        .step-number {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 30px;
+            height: 30px;
+            background-color: #d81e05;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .process-step h4 {
+            margin-top: 0;
+            color: #065f46;
+            margin-bottom: 0.75rem;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        .comparison-table th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .brand-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 1rem;
+            background-color: white;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .brand-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .brand-name {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #065f46;
+        }
+
+        .brand-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+
+        .selling-tip {
+            background-color: #f3f4f6;
+            border-left: 4px solid #d81e05;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .selling-tip h4 {
+            margin-top: 0;
+            color: #d81e05;
+        }
+
+        .serving-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .serving-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .serving-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .serving-header {
+            padding: 0.75rem;
+            background-color: #065f46;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .serving-content {
+            padding: 1rem;
+        }
+
+        .serving-content ul {
+            margin-top: 0.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .serving-content li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav aria-label="Primary navigation">
+            <div class="container">
+                <div class="nav-left">
+                    <a href="javascript:history.back()" class="nav-back">← Back</a>
+                    <a href="index.html" class="logo">
+                        <img src="public/images/cheers-logo.png" alt="Cheers Liquor Mart Logo">
+                        <span class="sr-only">Cheers Liquor Mart</span>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="policies.html">Policies</a>
+                    <a href="events.html">Events</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="incident-report.html" class="nav-highlight">Incident Report</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Cheers Liquor Mart</h1>
+        <h2>Tequila & Mezcal Education</h2>
+        <p class="subtitle">Learn about these premium Mexican spirits to help customers discover authentic agave products.</p>
+
+        <div class="tequila-section">
+            <h2>What is Tequila?</h2>
+            <p>Tequila is a Mexican spirit made from the blue agave plant, primarily produced in Jalisco and a few surrounding states. It has a rich cultural heritage and is regulated by strict production standards:</p>
+
+            <ul>
+                <li>Must be made from at least 51% blue agave, though 100% agave tequila is superior.</li>
+                <li>Distilled in copper or stainless steel stills.</li>
+                <li>Aged in oak barrels or stainless steel, depending on the style.</li>
+            </ul>
+
+            <div class="selling-tip">
+                <h4>QUICK SELLING TIP</h4>
+                <p>When customers are looking at tequila, check the bottle for "100% Agave" labeling. If it doesn't say this, it's a mixto tequila. Gently educate customers on the difference and suggest 100% agave options for a better experience, especially if they complain about past bad experiences with tequila.</p>
+            </div>
+
+            <h3>Types of Tequila</h3>
+            <div class="type-container">
+                <div class="type-card">
+                    <div class="type-header">Blanco (Silver)</div>
+                    <div class="type-content">
+                        <ul>
+                            <li>Unaged or aged less than 2 months in stainless steel or neutral oak.</li>
+                            <li>Has the purest agave flavor – peppery, citrusy, and herbal.</li>
+                            <li>Best for cocktails like margaritas.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="type-card">
+                    <div class="type-header">Reposado (Rested)</div>
+                    <div class="type-content">
+                        <ul>
+                            <li>Aged 2 months to 1 year in oak barrels.</li>
+                            <li>Smoother than Blanco, with notes of vanilla, caramel, and light spice.</li>
+                            <li>Great for sipping or premium cocktails.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="type-card">
+                    <div class="type-header">Añejo (Aged)</div>
+                    <div class="type-content">
+                        <ul>
+                            <li>Aged 1 to 3 years in oak barrels.</li>
+                            <li>Develops richer flavors with oak, vanilla, dried fruit, and spice.</li>
+                            <li>Best for sipping neat or on the rocks.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="type-card">
+                    <div class="type-header">Extra Añejo (Ultra-Aged)</div>
+                    <div class="type-content">
+                        <ul>
+                            <li>Aged over 3 years in oak barrels.</li>
+                            <li>Deep, complex flavors with chocolate, tobacco, and dried fruit notes.</li>
+                            <li>Premium sipping tequila, similar to aged whiskey.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="type-card">
+                    <div class="type-header">Joven (Gold)</div>
+                    <div class="type-content">
+                        <ul>
+                            <li>A mix of Blanco and aged tequilas, or sometimes Blanco with added caramel color.</li>
+                            <li>Typically lower quality, often used for budget cocktails.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h3>100% Agave vs. Mixto</h3>
+            <div class="type-container">
+                <div class="type-card">
+                    <div class="type-header">100% Agave Tequila</div>
+                    <div class="type-content">
+                        <p>Made only from blue agave, offering better taste and quality.</p>
+                        <ul>
+                            <li>Cleaner flavor profile</li>
+                            <li>Less likely to cause hangovers</li>
+                            <li>Must be bottled in Mexico</li>
+                            <li>Will always state "100% Agave" on the label</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="type-card">
+                    <div class="type-header">Mixto Tequila</div>
+                    <div class="type-content">
+                        <p>Contains at least 51% agave, with added sugars and coloring. Usually cheaper and lower quality.</p>
+                        <ul>
+                            <li>Can contain artificial flavors and coloring</li>
+                            <li>Often associated with harsh taste and strong hangovers</li>
+                            <li>Does not state "100% Agave" on the label</li>
+                            <li>More commonly used in budget bars</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tequila-section">
+            <h2>The Tequila-Making Process</h2>
+            <p>Understanding how tequila is made helps explain the flavor differences between brands and styles.</p>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4>Harvesting (Jimado)</h4>
+                    <p>Agave plants take 6-8 years to mature. The piña (heart of the plant) is harvested by skilled workers called jimadores, who remove the spiny leaves with a special tool called a coa.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4>Cooking</h4>
+                    <p>The piñas are slowly roasted in brick ovens or autoclaves (pressure cookers) to convert starches into fermentable sugars. This process can take 1-3 days in traditional ovens or just 8-12 hours in modern autoclaves.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4>Extraction</h4>
+                    <p>The cooked agave is crushed to release its sweet juice, known as "mosto". Traditional methods use a large stone wheel called a tahona, while modern distilleries use mechanical shredders and roller mills.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4>Fermentation</h4>
+                    <p>Yeast is added to convert sugars into alcohol over 2-5 days. This produces a low-alcohol liquid called "tepache" (7-10% ABV). The type of yeast and fermentation conditions greatly affect flavor.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h4>Distillation</h4>
+                    <p>Tepache is distilled twice in copper or stainless-steel stills. The first distillation produces a low-proof spirit called "ordinario," and the second results in clear, high-proof Blanco tequila (55-60% ABV, usually diluted to 40%).</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <h4>Aging</h4>
+                    <p>If aging is required (for Reposado, Añejo, or Extra Añejo), tequila is stored in oak barrels, developing deeper flavors. Most producers use ex-bourbon barrels, though some use wine or cognac barrels for unique flavor profiles.</p>
+                </div>
+            </div>
+
+            <div class="selling-tip">
+                <h4>UPSELLING OPPORTUNITY</h4>
+                <p>When recommending premium tequilas, mention production details: "This tequila is made using traditional brick ovens and a tahona stone to crush the agave, resulting in a richer, more complex flavor than mass-produced brands." This knowledge helps justify the higher price point.</p>
+            </div>
+        </div>
+
+        <div class="tequila-section">
+            <h2>Mezcal vs. Tequila</h2>
+            <p>While all tequilas are technically mezcals, not all mezcals are tequilas. Here are the key differences between these related but distinct spirits:</p>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Tequila</th>
+                        <th>Mezcal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Agave Type</td>
+                        <td>Only Blue Agave (Agave tequilana Weber)</td>
+                        <td>Up to 30+ agave varieties (Espadin is most common)</td>
+                    </tr>
+                    <tr>
+                        <td>Production</td>
+                        <td>Often industrialized in large facilities</td>
+                        <td>More artisanal, small-batch methods</td>
+                    </tr>
+                    <tr>
+                        <td>Cooking</td>
+                        <td>Steam-cooked in ovens/autoclaves</td>
+                        <td>Roasted in underground pits with wood and stones</td>
+                    </tr>
+                    <tr>
+                        <td>Flavor</td>
+                        <td>Clean, smooth, agave-forward</td>
+                        <td>Smoky, earthy, complex, often more rustic</td>
+                    </tr>
+                    <tr>
+                        <td>Regions</td>
+                        <td>Jalisco + a few states (limited by law)</td>
+                        <td>Oaxaca + 8 other states</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>What is Mezcal?</h3>
+            <p>Mezcal is an umbrella term for all agave spirits, with tequila as a subcategory. It's production is characterized by:</p>
+
+            <ul>
+                <li>It is mainly produced in Oaxaca, but also in Durango, Guerrero, and six other states.</li>
+                <li>The traditional production method involves roasting agave piñas in underground pits, giving mezcal its signature smoky flavor.</li>
+                <li>Mezcal is often small-batch and artisanal, with each batch reflecting the unique agave variety, climate, and production method.</li>
+                <li>Many producers still use traditional clay pot stills rather than copper or stainless steel.</li>
+            </ul>
+
+            <h3>Types of Mezcal</h3>
+            <p>Like tequila, mezcal is categorized by aging:</p>
+
+            <div class="type-container">
+                <div class="type-card">
+                    <div class="type-header">Joven (Young)</div>
+                    <div class="type-content">
+                        <p>Unaged, capturing pure agave flavors with the strongest smoke character. Most traditional and representative of mezcal's distinctive style.</p>
+                    </div>
+                </div>
+
+                <div class="type-card">
+                    <div class="type-header">Reposado</div>
+                    <div class="type-content">
+                        <p>Aged 2-12 months, offering a smoother experience with light oak influence while retaining the mezcal's smoky character.</p>
+                    </div>
+                </div>
+
+                <div class="type-card">
+                    <div class="type-header">Añejo</div>
+                    <div class="type-content">
+                        <p>Aged over 1 year, developing rich and complex flavors with more pronounced wood notes complementing the smoke.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="selling-tip">
+                <h4>SELLING TIP</h4>
+                <p>For customers interested in trying mezcal for the first time, describe it as "tequila's smokier cousin." Suggest they start with a cocktail like a Mezcal Margarita or a Mezcal Negroni before trying it neat, as the smoke can be intense for beginners.</p>
+            </div>
+        </div>
+
+        <div class="tequila-section">
+            <h2>Popular Tequila & Mezcal Brands</h2>
+            <p>Knowing the top brands and their characteristics helps you make informed recommendations to customers:</p>
+
+            <h3>Tequila Brands We Carry</h3>
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <div class="brand-name">Patrón</div>
+                    <div class="brand-desc">Premium, smooth, well-balanced. Made using traditional methods with modern consistency. Great entry point to premium tequilas.</div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-name">Don Julio</div>
+                    <div class="brand-desc">Clean, refined, excellent for sipping. Known for its balanced profile and crisp finish. The Reposado is particularly well-regarded.</div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-name">Jose Cuervo</div>
+                    <div class="brand-desc">Widely available, includes both mixto (Especial) and 100% agave (Tradicional) options. Their Reserva de la Familia is a high-end Extra Añejo.</div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-name">Espolòn</div>
+                    <div class="brand-desc">Affordable, high-quality 100% agave tequila with distinctive skeleton-themed labels. Great value proposition for cocktails and casual sipping.</div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-name">Herradura</div>
+                    <div class="brand-desc">Rich, full-bodied, aged tequilas highly rated by experts. One of the few distilleries that estate-bottles (grows agave and produces tequila in the same location).</div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-name">Casamigos</div>
+                    <div class="brand-desc">Co-founded by George Clooney, smooth and accessible with a celebrity appeal. Slightly sweeter profile that appeals to beginners.</div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-name">El Tesoro</div>
+                    <div class="brand-desc">Traditional production methods with tahona-crushed agave. Bright, vibrant flavors that showcase pure agave character. A connoisseur's choice.</div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-name">Olmeca Altos</div>
+                    <div class="brand-desc">Bartender-favorite with excellent price-to-quality ratio. Made with a combination of tahona and roller mill methods for complexity at an accessible price.</div>
+                </div>
+            </div>
+
+            <h3>Mezcal Brands We Carry</h3>
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <div class="brand-name">Del Maguey</div>
+                    <div class="brand-desc">Artisanal, single-village mezcals that showcase different production regions. Their Vida expression is a great introduction to mezcal.</div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-name">Montelobos</div>
+                    <div class="brand-desc">Smooth, well-balanced smoke with a more approachable profile for beginners. Focuses on sustainable production practices.</div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-name">Mezcal Vago</div>
+                    <div class="brand-desc">Small-batch, traditional production with detailed information about the mezcalero (distiller) on each bottle. For those who appreciate authenticity and transparency.</div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-name">Los Amantes</div>
+                    <div class="brand-desc">Premium, aged mezcals with refined smoke character. More elegant and restrained than some traditional mezcals.</div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-name">El Jolgorio</div>
+                    <div class="brand-desc">Specializes in rare wild agave varieties, each with distinctive flavor profiles. Premium, collectible bottles for true enthusiasts.</div>
+                </div>
+
+                <div class="brand-card">
+                    <div class="brand-name">Bozal</div>
+                    <div class="brand-desc">Features unique clay bottles and focuses on wild-grown agave varieties. Each batch showcases different agave types and terroir.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tequila-section">
+            <h2>Serving & Drinking Tequila & Mezcal</h2>
+            <p>Advising customers on proper serving methods enhances their experience and appreciation of these spirits:</p>
+
+            <div class="serving-grid">
+                <div class="serving-card">
+                    <div class="serving-header">Tequila Serving Guide</div>
+                    <div class="serving-content">
+                        <h4>Sipping Tequilas:</h4>
+                        <p>Añejo, Extra Añejo, and high-end Reposado expressions are best enjoyed neat or with minimal dilution.</p>
+
+                        <h4>Cocktail Tequilas:</h4>
+                        <p>Blanco and mid-tier Reposado work best in mixed drinks, with enough character to stand up to other ingredients.</p>
+
+                        <h4>Neat or On the Rocks:</h4>
+                        <p>Serve in a lowball glass at room temperature or with a large ice cube for slight cooling without excessive dilution.</p>
+
+                        <h4>Traditional Mexican Style:</h4>
+                        <p>Sipped alongside sangrita (a spiced citrus chaser) or with lime and salt (though quality tequilas don't need these additions).</p>
+
+                        <h4>Glassware Recommendation:</h4>
+                        <p>Stemmed snifters concentrate aromas, while small tumblers or specialized tequila flutes also work well for sipping.</p>
+                    </div>
+                </div>
+
+                <div class="serving-card">
+                    <div class="serving-header">Mezcal Serving Guide</div>
+                    <div class="serving-content">
+                        <h4>Traditional Service:</h4>
+                        <p>Best enjoyed neat in small clay copitas or shallow jicaras to appreciate its complexity and rustic character.</p>
+
+                        <h4>Accompaniments:</h4>
+                        <p>Often served with orange slices and sal de gusano (worm salt made with ground larvae, chilies, and salt) for an authentic experience.</p>
+
+                        <h4>Cocktail Usage:</h4>
+                        <p>Works in cocktails, but the smoky flavor dominates - use sparingly as an accent or in smoke-forward cocktails like mezcal old fashioneds.</p>
+
+                        <h4>Temperature:</h4>
+                        <p>Always serve at room temperature - chilling mutes the complex flavors that make mezcal special.</p>
+
+                        <h4>Ritual Aspect:</h4>
+                        <p>Traditionally shared in a communal setting - emphasize the cultural significance and craftsmanship behind each bottle.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="selling-tip">
+                <h4>UPSELLING OPPORTUNITY</h4>
+                <p>When customers purchase premium tequila or mezcal, suggest appropriate glassware and accompaniments: "To fully enjoy this special bottle at home, you might want to consider proper glassware - we have these beautiful handcrafted copitas that really enhance the aromas."</p>
+            </div>
+
+            <h3>Popular Tequila & Mezcal Cocktails</h3>
+            <ul>
+                <li><strong>Margarita:</strong> The classic tequila cocktail - tequila, orange liqueur, and lime juice.</li>
+                <li><strong>Paloma:</strong> Tequila and grapefruit soda - more popular in Mexico than margaritas.</li>
+                <li><strong>Mezcal Negroni:</strong> Substituting mezcal for gin creates a smoky twist on the classic.</li>
+                <li><strong>Oaxaca Old Fashioned:</strong> Combines tequila, mezcal, agave nectar, and bitters for a complex sipper.</li>
+                <li><strong>Ranch Water:</strong> Simple highball with tequila, lime juice, and Topo Chico mineral water.</li>
+                <li><strong>Mexican Mule:</strong> Tequila version of a Moscow Mule with ginger beer and lime.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Contact</h3>
+                    <p>123 Main Street</p>
+                    <p>Your City, State 12345</p>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div>
+                    <h3>Hours</h3>
+                    <p>Mon-Fri: 9:00 AM - 9:00 PM</p>
+                    <p>Saturday: 10:00 AM - 8:00 PM</p>
+                    <p>Sunday: 11:00 AM - 6:00 PM</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="policies.html">Company Policies</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                        <li><a href="resources.html">Employee Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cheers Liquor Mart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

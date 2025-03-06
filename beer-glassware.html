@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beer Glassware & Serving Guide for Cheers Liquor Mart employees - Learn proper beer service to enhance customer experience.">
+    <meta name="theme-color" content="#d81e05">
+    <title>Beer Glassware & Serving - Cheers Liquor Mart</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .glassware-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .glassware-section h2 {
+            color: #065f46;
+            margin-bottom: 1rem;
+        }
+
+        .glassware-section h3 {
+            color: #065f46;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        .glassware-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .glass-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+            background-color: white;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .glass-image {
+            height: 220px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 1rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .glass-content {
+            padding: 1rem;
+        }
+
+        .glass-content h4 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            color: #065f46;
+        }
+
+        .beer-types {
+            margin-top: 0.75rem;
+            font-style: italic;
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+
+        .temperature-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        .temperature-table th,
+        .temperature-table td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        .temperature-table th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .temperature-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        .pour-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .pour-step {
+            flex: 1;
+            min-width: 200px;
+            background-color: #f3f4f6;
+            border-radius: 8px;
+            padding: 1rem;
+            position: relative;
+        }
+
+        .pour-step-number {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 30px;
+            height: 30px;
+            background-color: #d81e05;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .pour-step h4 {
+            margin-top: 0;
+            color: #065f46;
+            margin-bottom: 0.75rem;
+        }
+
+        .selling-tip {
+            background-color: #f3f4f6;
+            border-left: 4px solid #d81e05;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .selling-tip h4 {
+            margin-top: 0;
+            color: #d81e05;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.5rem;
+        }
+
+        .common-mistakes {
+            background-color: #fee2e2;
+            border-left: 4px solid #dc2626;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .common-mistakes h3 {
+            color: #dc2626;
+            border-bottom: none;
+        }
+
+        .common-mistakes ul {
+            margin-top: 0.5rem;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav aria-label="Primary navigation">
+            <div class="container">
+                <div class="nav-left">
+                    <a href="javascript:history.back()" class="nav-back">← Back</a>
+                    <a href="index.html" class="logo">
+                        <img src="public/images/cheers-logo.png" alt="Cheers Liquor Mart Logo">
+                        <span class="sr-only">Cheers Liquor Mart</span>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="policies.html">Policies</a>
+                    <a href="events.html">Events</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="incident-report.html" class="nav-highlight">Incident Report</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Cheers Liquor Mart</h1>
+        <h2>Beer Glassware & Serving Guide</h2>
+        <p class="subtitle">Learn how proper glassware and serving techniques enhance the beer drinking experience for our customers.</p>
+
+        <div class="glassware-section">
+            <h2>Why Proper Glassware Matters</h2>
+            <p>Using the correct glass for each beer style isn't just about presentation—it can significantly impact aroma, flavor perception, head retention, and temperature control. By recommending appropriate glassware to customers, you can help them experience their beer as the brewer intended.</p>
+
+            <div class="selling-tip">
+                <h4>SELLING TIP</h4>
+                <p>When customers purchase craft beer, suggest appropriate glassware from our home goods section. Mention that "the right glass can enhance the flavors and aromas of your favorite beer, improving the overall experience." This creates a natural upsell opportunity.</p>
+            </div>
+        </div>
+
+        <div class="glassware-section">
+            <h2>Beer Glassware Guide</h2>
+            <p>Each glass style is designed to highlight specific beer characteristics. Here are the key glassware types we recommend and sell in our store:</p>
+
+            <div class="glassware-grid">
+                <div class="glass-card">
+                    <div class="glass-image" style="background-image: url('public/images/pint-glass.png');"></div>
+                    <div class="glass-content">
+                        <h4>Shaker Pint Glass</h4>
+                        <p>The standard American pint glass with straight sides that widen slightly toward the top. Versatile and sturdy, but not specialized for any particular beer style.</p>
+                        <p class="beer-types"><strong>Best for:</strong> American Ales, IPAs, Pale Ales, Amber Ales, Porters, most everyday beers</p>
+                    </div>
+                </div>
+
+                <div class="glass-card">
+                    <div class="glass-image" style="background-image: url('public/images/pilsner-glass.png');"></div>
+                    <div class="glass-content">
+                        <h4>Pilsner Glass</h4>
+                        <p>Tall, slender glass with a slight taper. The shape showcases color, clarity, and carbonation while maintaining the beer's head and capturing volatile aromas.</p>
+                        <p class="beer-types"><strong>Best for:</strong> Pilsners, Lagers, Kölsch, Blonde Ales, other light-colored beers</p>
+                    </div>
+                </div>
+
+                <div class="glass-card">
+                    <div class="glass-image" style="background-image: url('public/images/tulip-glass.png');"></div>
+                    <div class="glass-content">
+                        <h4>Tulip Glass</h4>
+                        <p>Bulbous body with a narrower top that curves outward at the rim. The shape traps aromas, supports complex head development, and allows swirling to release more aromatics.</p>
+                        <p class="beer-types"><strong>Best for:</strong> Belgian Strong Ales, IPAs, Saisons, Sour Beers, Scottish Ales, Double/Imperial IPAs</p>
+                    </div>
+                </div>
+
+                <div class="glass-card">
+                    <div class="glass-image" style="background-image: url('public/images/weizen-glass.png');"></div>
+                    <div class="glass-content">
+                        <h4>Weizen Glass</h4>
+                        <p>Tall glass with a curved, slender body that widens at the top. The additional room accommodates the thick, fluffy heads typical of wheat beers and traps their signature banana and clove aromas.</p>
+                        <p class="beer-types"><strong>Best for:</strong> Hefeweizen, Dunkelweizen, Weizenbock, other wheat beers</p>
+                    </div>
+                </div>
+
+                <div class="glass-card">
+                    <div class="glass-image" style="background-image: url('public/images/snifter-glass.png');"></div>
+                    <div class="glass-content">
+                        <h4>Snifter</h4>
+                        <p>Short glass with a wide bottom and a narrower top, originally designed for brandy and cognac. The shape concentrates aromas and is perfect for sipping high-ABV beers.</p>
+                        <p class="beer-types"><strong>Best for:</strong> Barleywines, Belgian Strong Ales, Imperial Stouts, Double/Triple IPAs, any high-alcohol beer</p>
+                    </div>
+                </div>
+
+                <div class="glass-card">
+                    <div class="glass-image" style="background-image: url('public/images/stout-glass.png');"></div>
+                    <div class="glass-content">
+                        <h4>Stout Glass</h4>
+                        <p>Similar to a tulip but slightly more bowl-shaped. The design focuses the roasted aromas toward the drinker and supports the creamy head characteristic of stouts.</p>
+                        <p class="beer-types"><strong>Best for:</strong> Irish Stouts, Imperial Stouts, Porters, Coffee Stouts, Oatmeal Stouts</p>
+                    </div>
+                </div>
+
+                <div class="glass-card">
+                    <div class="glass-image" style="background-image: url('public/images/stein-glass.png');"></div>
+                    <div class="glass-content">
+                        <h4>Beer Stein</h4>
+                        <p>Traditional German mug made of stoneware, pewter, or glass with a hinged lid. The heavy construction keeps beer cold longer, and the handle keeps warm hands away from the beer.</p>
+                        <p class="beer-types"><strong>Best for:</strong> German Lagers, Oktoberfest/Märzen beers, Bocks</p>
+                    </div>
+                </div>
+
+                <div class="glass-card">
+                    <div class="glass-image" style="background-image: url('public/images/teku-glass.png');"></div>
+                    <div class="glass-content">
+                        <h4>Teku Glass</h4>
+                        <p>Modern, stemmed beer glass with an angular bowl that narrows toward the top. Considered by many to be the ultimate beer tasting glass, it enhances aromas and looks elegant.</p>
+                        <p class="beer-types"><strong>Best for:</strong> Any craft beer where aroma is important, especially sours, barrel-aged beers, and aromatic IPAs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="glassware-section">
+            <h2>Optimal Beer Serving Temperatures</h2>
+            <p>Serving beer at the right temperature is crucial for releasing its full flavor profile. Too cold can mask flavors, while too warm can make beer unpleasantly bitter or sweet.</p>
+
+            <table class="temperature-table">
+                <thead>
+                    <tr>
+                        <th>Beer Style</th>
+                        <th>Ideal Temperature</th>
+                        <th>Storage Guidance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Light Lagers, Pilsners, Light Wheat Beers</td>
+                        <td>38-45°F (3-7°C)</td>
+                        <td>Standard refrigerator temperature</td>
+                    </tr>
+                    <tr>
+                        <td>Pale Ales, IPAs, Amber Ales, Porters</td>
+                        <td>45-50°F (7-10°C)</td>
+                        <td>Refrigerate, then let sit 5-10 minutes before serving</td>
+                    </tr>
+                    <tr>
+                        <td>American Strong Ales, Double IPAs</td>
+                        <td>50-55°F (10-13°C)</td>
+                        <td>Refrigerate, then let sit 10-15 minutes before serving</td>
+                    </tr>
+                    <tr>
+                        <td>Belgian Ales, Stouts, Barleywines</td>
+                        <td>55-60°F (13-15°C)</td>
+                        <td>Refrigerate, then let sit 15-20 minutes before serving</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="selling-tip">
+                <h4>CUSTOMER ADVICE</h4>
+                <p>When customers purchase high-quality or high-ABV beers, remind them that "unlike mass-produced lagers, this beer will reveal more complex flavors when served slightly warmer than refrigerator temperature. I recommend taking it out of the fridge about 15 minutes before you plan to enjoy it."</p>
+            </div>
+        </div>
+
+        <div class="glassware-section">
+            <h2>Perfect Pour Technique</h2>
+            <p>A proper pour enhances aroma, flavor, and appearance by creating the right amount of foam head. Here's the technique to recommend to customers:</p>
+
+            <div class="pour-steps">
+                <div class="pour-step">
+                    <div class="pour-step-number">1</div>
+                    <h4>Start with Clean Glassware</h4>
+                    <p>Ensure the glass is clean and free of soap residue or oils, which can affect head retention and aroma. A "beer clean" glass will have water sheet evenly on the inside rather than forming droplets.</p>
+                </div>
+
+                <div class="pour-step">
+                    <div class="pour-step-number">2</div>
+                    <h4>Hold at an Angle</h4>
+                    <p>Hold the glass at a 45-degree angle when beginning the pour. This reduces splashing and controls foam formation.</p>
+                </div>
+
+                <div class="pour-step">
+                    <div class="pour-step-number">3</div>
+                    <h4>Pour Down the Side</h4>
+                    <p>Aim for the middle of the glass's side, allowing the beer to flow smoothly along the inside of the glass.</p>
+                </div>
+
+                <div class="pour-step">
+                    <div class="pour-step-number">4</div>
+                    <h4>Straighten the Glass</h4>
+                    <p>When the glass is about half full, gradually straighten it to an upright position. This creates the proper head as beer pours directly into the center.</p>
+                </div>
+
+                <div class="pour-step">
+                    <div class="pour-step-number">5</div>
+                    <h4>Finish with a Proper Head</h4>
+                    <p>A proper head should be 1 to 1.5 inches (about two fingers width) for most beers. The head releases aromas and adds to the overall experience.</p>
+                </div>
+            </div>
+
+            <h3>Special Pouring Techniques</h3>
+            <div class="faq-item">
+                <p class="faq-question">Wheat Beers</p>
+                <p>German wheat beers traditionally include yeast in the bottle. Pour most of the beer normally, then swirl the remaining beer in the bottle to mix the sediment and pour into the glass. This adds a cloudy appearance and additional flavor.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Belgian Beers</p>
+                <p>Many Belgian beers have specific pouring rituals. For example, Duvel recommends a slow pour down the side with the bottle about an inch from the glass to create its signature fluffy white head.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Nitro Beers</p>
+                <p>For nitro beers like Guinness, pour vigorously into a straight glass, wait for the cascade effect to settle, then top off with a second pour to achieve the perfect creamy head.</p>
+            </div>
+
+            <div class="common-mistakes">
+                <h3>Common Beer Serving Mistakes to Avoid</h3>
+                <ul>
+                    <li><strong>Frosted or Chilled Glassware</strong> - Can cause excessive foaming and masks beer flavors by numbing taste buds</li>
+                    <li><strong>Serving All Beers Ice Cold</strong> - Appropriate only for light lagers; most beers need warmer temperatures to express their full flavor profile</li>
+                    <li><strong>Pouring Straight Down</strong> - Creates too much foam and can lead to an overly oxidized beer</li>
+                    <li><strong>Dipping the Bottle/Can in the Glass</strong> - Introduces potential contaminants from the outside of the container</li>
+                    <li><strong>Using Improper Glassware</strong> - Can diminish the aroma, appearance, and overall sensory experience</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="glassware-section">
+            <h2>Beer Service FAQs</h2>
+            <p>Common questions customers ask about enjoying their beer at home:</p>
+
+            <div class="faq-item">
+                <p class="faq-question">Do I really need different glasses for different beers?</p>
+                <p>While you can certainly enjoy beer from any clean glass, specialized glassware enhances specific characteristics. If you only want a few versatile options, we recommend a tulip glass, a pint glass, and a pilsner glass for most situations.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Why does my beer foam too much when I pour it?</p>
+                <p>Excessive foaming can be caused by pouring too quickly, pouring directly into the bottom of the glass, using glasses with microscopic rough spots, or beer that's too warm or agitated. Try pouring slowly down the side of the glass at a 45-degree angle.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Is beer from a can lower quality than bottled beer?</p>
+                <p>Not at all! Modern cans actually protect beer better from light and oxygen than bottles do. Many craft brewers now prefer cans. For the best experience, pour canned beer into a glass to release aromas and allow a proper head to form.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">How long can I keep beer before it goes bad?</p>
+                <p>Most beer is best consumed fresh, especially hoppy beers like IPAs. As a general guideline:
+                <br>• Hoppy beers: 2-3 months
+                <br>• Standard ABV beers (5-8%): 6-9 months
+                <br>• High ABV beers (8%+): Can age well for 1+ years
+                <br>Always store beer upright in a cool, dark place.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">What's the brown sediment in my bottle of Belgian/craft beer?</p>
+                <p>That's yeast sediment, which is completely normal and safe in bottle-conditioned beers. Some beer styles are traditionally served with the yeast mixed in (like hefeweizen), while others are carefully poured to leave the sediment behind.</p>
+            </div>
+        </div>
+
+        <div class="glassware-section">
+            <h2>Beer Flight Presentation</h2>
+            <p>For customers hosting beer tastings at home, suggest our beer flight sets and provide these presentation tips:</p>
+
+            <ul>
+                <li><strong>Tasting Order:</strong> Arrange beers from lightest to darkest, mildest to strongest in flavor, and lowest to highest in alcohol content</li>
+                <li><strong>Portion Size:</strong> 3-4 oz per sample is ideal for tasting multiple beers</li>
+                <li><strong>Temperature Considerations:</strong> Remove stronger beers from refrigeration earlier than lighter ones</li>
+                <li><strong>Palate Cleansers:</strong> Suggest water crackers, bread, or mild cheese between samples</li>
+                <li><strong>Information Cards:</strong> Create small cards with beer name, style, ABV, and tasting notes</li>
+            </ul>
+
+            <div class="selling-tip">
+                <h4>UPSELL OPPORTUNITY</h4>
+                <p>When customers are purchasing multiple beer varieties, suggest our beer flight glasses, tasting notepads, and beer flavor wheels to create a complete at-home tasting experience. This can increase basket size while enhancing their beer exploration journey.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Contact</h3>
+                    <p>123 Main Street</p>
+                    <p>Your City, State 12345</p>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div>
+                    <h3>Hours</h3>
+                    <p>Mon-Fri: 9:00 AM - 9:00 PM</p>
+                    <p>Saturday: 10:00 AM - 8:00 PM</p>
+                    <p>Sunday: 11:00 AM - 6:00 PM</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="policies.html">Company Policies</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                        <li><a href="resources.html">Employee Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cheers Liquor Mart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
