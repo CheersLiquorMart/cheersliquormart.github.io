@@ -9,9 +9,20 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Add favicon if available -->
     <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+    <style>
+        .back-to-top {
+            font-size: 0.8em;
+            margin-left: 10px;
+            text-decoration: none;
+            color: #d81e05;
+        }
+        .back-to-top:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <header id="top">
         <nav aria-label="Primary navigation">
             <div class="container">
                 <div class="nav-left">
@@ -33,34 +44,346 @@
 
     <main class="container">
         <div class="policy-content">
-            <h1>Employee Handbook</h1>
-            <div class="policy-section">
-                <h2>Introduction</h2>
-                <p>Welcome to Cheers Liquor Mart. This handbook contains important information about your employment with us.</p>
-            </div>
+            <h1>EMPLOYEE HANDBOOK</h1>
+            <p class="version">V: 12.17.2024</p>
 
-            <div class="policy-section">
-                <h2>Employment Policies</h2>
-                <ul>
-                    <li>Equal Employment Opportunity</li>
-                    <li>At-Will Employment</li>
-                    <li>Work Hours and Schedules</li>
-                    <li>Attendance and Punctuality</li>
-                </ul>
-            </div>
+            <section id="toc" class="policy-section">
+                <h2>TABLE OF CONTENTS <a href="#" class="back-to-top">[Back to Top]</a></h2>
+                <p><a href="#welcome">I          Welcome</a></p>
+                <p><a href="#purpose">II         Purpose of This Handbook</a></p>
+                <p><a href="#policies">III        Company Policies</a></p>
+                <p><a href="#general-policies">A.	General Policies</a></p>
+                <p><a href="#hiring-policies">B.	Hiring Policies</a></p>
+                <p><a href="#sexual-harassment">C.	Sexual Harassment Policy</a></p>
+                <p><a href="#attendance">D.	Attendance Policy</a></p>
+                <p><a href="#pay-dates">E.	Pay Dates and Timecards</a></p>
+                <p><a href="#overtime">F.	Overtime Pay and Holiday Pay</a></p>
+                <p><a href="#vacation">G.	Vacation Pay and Sick Pay</a></p>
+                <p><a href="#breaks">H.	Breaks and Meal Periods</a></p>
+                <p><a href="#parking">I.	Parking Policy</a></p>
+                <p><a href="#dress-code">J.	Dress Code and Appearance Standards</a></p>
+                <p><a href="#cell-phone">K.	Cell Phone/Mobile Device Policy</a></p>
+                <p><a href="#drug-policy">L.	Drug/Alcohol Policy</a></p>
+                <p><a href="#theft-policy">M.	Employee Theft Policy</a></p>
+                <p><a href="#smoking-policy">N.	Smoking/Vaping Policy</a></p>
+                <p><a href="#workers-comp">O.	Workers' Compensation/Workplace Injuries</a></p>
+                <p><a href="#employee-purchases">P.	Employee Purchases</a></p>
+                <p><a href="#shoplifters">Q.	Shoplifters & Robbery Protocol</a></p>
+                <p><a href="#age-restricted">R.	Age-Restricted Purchases/Identification Policy</a></p>
+                <p><a href="#violence-policy">S.	Policy Prohibiting Threats or Acts of Violence and Weapons</a></p>
+                <p><a href="#disciplinary">T.	Disciplinary Escalation Policy</a></p>
+                <p><a href="#summary">U.	Summary & Employee Acknowledgement</a></p>
+            </section>
 
-            <div class="policy-section">
-                <h2>Benefits</h2>
-                <ul>
-                    <li>Health Insurance</li>
-                    <li>Paid Time Off</li>
-                    <li>Holidays</li>
-                    <li>401(k) Plan</li>
-                </ul>
-            </div>
+            <section id="welcome" class="policy-section">
+                <h2>I. Welcome <a href="#" class="back-to-top">[Back to Top]</a></h2>
+                <p>Welcome to Cheers Liquor Mart! We hope that you enjoy your position with us and that you'll be as proud to be a member of our team as we are to have you here. Cheers has been in business for over 40 years, and we have consistently been named "Best of The Springs" year after year thanks to our staff's dedication to providing excellent customer service. We trust that you will help us continue to safeguard our reputation as "Colorado Springs' Greatest Liquid Asset" for years to come!</p>
+                <p>We value input from our staff and welcome suggestions to improve processes. Management maintains an open-door policy - if you see a way we can increase efficiency, safety, customer satisfaction, etc. we encourage you to bring that to the attention of your supervisor or store management. We want to give our customers the best possible experience shopping with us as well as promote the well-being of our valuable staff.</p>
+                <p>Again, welcome aboard. Here's to a prosperous new beginning – Cheers!</p>
+            </section>
+
+            <section id="purpose" class="policy-section">
+                <h2>II. Purpose of This Handbook <a href="#" class="back-to-top">[Back to Top]</a></h2>
+                <p>This handbook will provide basic information about policies and procedures relating to employment at Cheers Liquor Mart and provides a reference manual that shall be followed by the Company and its Employees. It is the duty of the management of the Company to administer fairly, without discrimination, these policies. It is the duty of all Employees to abide by and follow these policies and procedures. In the event an Employee has any questions concerning the application of any policy or procedure they should ask their supervisor or another member of management.</p>
+                <p>THE LANGUAGE OF THIS HANDBOOK AND THE POLICIES AND PROCEDURES STATED WITHIN ARE NOT INTENDED TO CREATE, IMPLY, OR CONSTITUTE A CONTRACT OF EMPLOYMENT BETWEEN THE COMPANY AND ITS EMPLOYEES. EMPLOYMENT IS ON AN "AT WILL" BASIS AND MAY BE TERMINATED AT ANY TIME BY THE COMPANY OR BY THE EMPLOYEE AT ANY TIME WITH OR WITHOUT PRIOR NOTICE. THIS HANDBOOK AND THE POLICIES AND PROCEDURES WITHIN ARE SUBJECT TO CHANGE AT ANY TIME, WITH OR WITHOUT PRIOR NOTICE, AT THE SOLE DISCRETION OF COMPANY OWNERSHIP OR MANAGEMENT.</p>
+            </section>
+
+            <section id="policies" class="policy-section">
+                <h2>III. Company Policies <a href="#" class="back-to-top">[Back to Top]</a></h2>
+
+                <section id="general-policies" class="policy-subsection">
+                    <h3>A. General Policies <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <p>First and foremost, we expect that all employees will treat every customer in a friendly, helpful, and courteous manner at all times. If you are on the sales floor, always greet customers and offer to help them locate products or answer questions they may have. If you are at the register, always ask customers if they found everything they were looking for and assist them if they did not and offer them carry-out assistance if it seems like they could use it. Always be mindful of the image you are presenting to customers; we expect you to conduct yourself in a professional manner and protect the reputation of the business.</p>
+                    <p>We also expect all employees to treat each other in a courteous, professional manner every day. Being disrespectful, uncooperative, or disruptive will not be tolerated, nor will any other conduct that distracts from the level of service that the store promotes. We also expect that you will act with integrity and honesty every day.</p>
+                    <p>The safety of our employees and customers is of utmost importance to us. Please immediately report any unsafe conditions to the General Manager or manager on duty. Keep aisles free of boxes or other debris, immediately clean spills, and mark wet floors with safety signage. Always use proper lifting techniques, ask for assistance with heavy items, and exercise caution when using ladders, cutting instruments, etc. Stay aware of your surroundings and use common sense to keep everyone safe.</p>
+                </section>
+
+                <section id="hiring-policies" class="policy-subsection">
+                    <h3>B. Hiring Policies <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <p>It is the policy of Cheers Liquor Mart not to discriminate against any applicant for employment or any employee because of color, race, religion, gender/gender identity, sexual orientation, national origin, disability, pregnancy, veteran status, or any other protected characteristics. Applicants and employees are subject to background check, including motor vehicle driving records. Written consent must be obtained from applicant/employee before Company may access background checks. Because the nature of business is selling alcohol and other legally age-restricted products, Cheers must restrict employment to those 21 (twenty-one) years of age or older to maintain compliance with Federal, State, and local laws.</p>
+                </section>
+
+                <section id="sexual-harassment" class="policy-subsection">
+                    <h3>C. Sexual Harassment Policy <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <p>Sexual harassment will not be tolerated. Any employee who engages in sexual harassment will be subject to disciplinary action up to and including termination of employment. This policy covers employee conduct toward other employees, any vendors/distributors and their representatives, as well as any employee conduct toward customers. Sexual harassment is a form of discrimination and is illegal. Sexual harassment includes harassment on the basis of sex, sexual orientation, self-identified or perceived sex, gender expression, gender identity, and the status of being transgender. Sexual harassment includes unwelcome conduct, which is either of a sexual nature, or is directed at an individual because of that individual's sex when:</p>
+                    <ul>
+                        <li>Such conduct has the purpose or effect of interfering with an individual's work performance or creating an intimidating, hostile or offensive work environment, even if the reporting individual is not the intended target of the sexual harassment.</li>
+                        <li>Such conduct is made either explicitly or implicitly a term or condition of employment.</li>
+                        <li>Submission to or rejection of such conduct is used as the basis for decisions affecting an individual's employment.</li>
+                    </ul>
+                    <p>Sexual harassment includes, but is not limited to, words, signs, jokes, pranks, intimidation or physical violence which are of a sexual nature, unwanted verbal or physical advances, or sexually explicit statements or remarks. Sexual harassment also occurs when a person in authority tries to trade job benefits for sexual favors, also known as quid pro quo harassment. This can include hiring, promotion, continued employment or any other terms, conditions, or privileges of employment. Examples of acts that may constitute sexual harassment and are expressly prohibited are, but not limited to:</p>
+                    <ul>
+                        <li>Touching, pinching, grabbing, patting, kissing, hugging, brushing against or poking another employee's body.</li>
+                        <li>Unwanted sexual advances or propositions, making explicit or implied threats or promises in return for submission to sexual favors, subtle or obvious pressure for unwelcome sexual activities.</li>
+                        <li>Sexually oriented gestures, noises, remarks, jokes, or comments, including comments about appearance or physical features.</li>
+                        <li>Displaying pictures, calendars, objects, or any other materials that are sexually demeaning or pornographic. This includes displays on computers or mobile devices and sharing such displays in the workplace.</li>
+                    </ul>
+                    <p>Any employee who witnesses or experiences sexual harassment is encouraged to report such behavior to the General Manager or the Office Manager. Retaliation against an individual for reporting sexual harassment is against the law and will not be tolerated. Disciplinary measures up to and including termination of employment will be enforced, even if retaliation occurs outside of working hours.</p>
+                </section>
+
+                <section id="attendance" class="policy-subsection">
+                    <h3>D. Attendance Policy <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <ol>
+                        <li>Schedules for the following week are posted on the break room bulletin board on Fridays. Employees are responsible for checking and confirming their own schedules for the following week.</li>
+                        <li>Any employee who fails to show up for a scheduled shift without notifying their supervisor will receive a written warning. A second occurrence will result in disciplinary measures up to and including termination of employment. If an employee is absent without approved leave and/or advance notice for 3 (three) consecutive scheduled shifts the absence will be considered job abandonment and therefore an automatic resignation. In the case of a documented medical emergency employees may seek leave retroactively if the medical emergency was of such a nature that it prevented the employee from providing advance notice.</li>
+                        <li>Employees are expected to arrive on time and be ready to start their shift at the scheduled time. Clocking in 5 (five) or more minutes later than scheduled shift start time is considered tardiness and consistent tardiness will result in disciplinary measures up to and including termination of employment. If an employee anticipates that they will be late for their shift they are expected to call to notify their supervisor at least 30 minutes prior to scheduled start time, or as soon as possible.</li>
+                        <li>Employees are required to enter and exit the building through the front doors only. The receiving doors are for freight only and are to be only opened by a manager. The receiving doors shall NEVER be opened before 7:30 am or after 6:00 pm.</li>
+                    </ol>
+                </section>
+
+                <section id="pay-dates" class="policy-subsection">
+                    <h3>E. Pay Dates and Timecards <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <ol>
+                        <li>For all hourly employees the workweeks begin on Mondays and end on Sundays. The pay period consists of 2 (two) weeks. Pay dates are bi-weekly on Wednesdays following the close of the pay period.</li>
+                        <li>For salaried employees pay periods are the 1st of the month through the 15th of the month, and the 16th of the month through the last calendar day of the month. Pay days are on the 15th and last day of the month. Salary will be prorated for actual days worked should employment begin on a day that is not the 1st or the 16th of the month or end on a day that is not the 15th or last calendar day of the month.</li>
+                        <li>All hourly employees are required to document hours worked on their timecards. It is the employee's responsibility to maintain the accuracy of their timecard. In the event a correction is needed the employee may have their supervisor sign the timecard with the approved correction.</li>
+                        <li>Timecard hours will be rounded to the nearest quarter of an hour.</li>
+                        <li>Employees are not permitted to punch in or out for another employee. Any employee in violation of this policy will be immediately terminated from employment.</li>
+                        <li>In the event an employee resigns their employment, any wages or compensation due will be paid on the next regular pay day.</li>
+                        <li>In the event employment is terminated by the employer, any wages or compensation due will be paid at the time of discharge. If the employer's payroll department is not scheduled to be operational at that time, wages will be made available within 6 (six) hours after the start of the department's next regular workday.</li>
+                        <li>If an employee feels that an error has been made in the calculation of their paycheck, they have 7 (seven) days from the date of the paycheck to address the issue with the Office Manager. Any resulting corrections will be included on the following regular paycheck.</li>
+                        <li>Pay advances will not be made without the written approval of the Owner. Any advanced amount will only be for half of the hours that an employee has already clocked, no draws against future scheduled hours will be made.</li>
+                    </ol>
+                </section>
+
+                <section id="overtime" class="policy-subsection">
+                    <h3>F. Overtime Pay and Holiday Pay <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <ol>
+                        <li>Overtime hours must be approved by the General Manager or by the Owner. If an employee is approaching overtime hours which were not scheduled, they must inform the General Manager or Owner before working into overtime hours and obtain approval.</li>
+                        <li>Hourly employees will be paid at 1.5 times their regular hourly rate for hours worked in excess of 40 (forty) hours per workweek.</li>
+                        <li>Hourly employees who work on the following holidays will be paid at 1.5 times their regular hourly rate:
+                            <ul>
+                                <li>New Year's Day</li>
+                                <li>Memorial Day</li>
+                                <li>Independence Day</li>
+                                <li>Labor Day</li>
+                                <li>Thanksgiving Day</li>
+                                <li>Easter</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </section>
+
+                <section id="vacation" class="policy-subsection">
+                    <h3>G. Vacation Pay and Sick Pay <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <ol>
+                        <li>Full time employees will earn 40 (forty) hours of paid vacation time on the 1 (one) year anniversary of their date of hire. At the 2nd year, and each year thereafter, employees will earn 80 (eighty) hours of paid vacation time. Part time employees are not eligible to earn paid vacation time. Vacation hours will be paid at the employee's regular rate. Full time employee is defined as those that work 32 or more hours per week.</li>
+                        <li>Vacation time must be requested at least 2 (two) weeks in advance with the General Manager. The company will make every effort to accommodate the requested date(s), but there may be situations where the vacation request cannot be approved.</li>
+                        <li>In the event two or more employees have requested the same vacation dates, the employee who requested vacation days first will be given preference. If vacation dates are requested by two or more employees simultaneously, preference will be given to employees who have been employed longest.</li>
+                        <li>All employees are eligible for sick pay under Colorado's Healthy Families & Workplaces Act. For every 30 (thirty) hours worked, 1 (one) hour of sick pay will be earned, up to 48 (forty-eight) hours per calendar year. Employers are permitted to require documentation for absences of 4 (four) or more consecutive days, and employees are permitted to provide documentation after their leave ends. Up to 48 (forty-eight) hours of sick pay accrued in a year but not used will carry forward, but employees may not use more than 48 (forty-eight) hours of paid sick leave in any calendar year.</li>
+                        <li>Accrued, unused sick leave is not payable to the employee in the event of separation of employment.</li>
+                        <li>Payment of vacation hours in lieu of taking vacation days off will not be made. Any remaining unused vacation hours at the employee's anniversary will be forfeited.</li>
+                    </ol>
+                </section>
+
+                <section id="breaks" class="policy-subsection">
+                    <h3>H. Breaks and Meal Periods <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <ol>
+                        <li>Lunch/meal break times are designated on the employee schedule, to the extent practical the times are to be adhered to by all employees. Employees are required to check with their supervisor before taking a lunch/meal break.</li>
+                        <li>For shifts of at least 5 (five) consecutive hours, employees are entitled to a 30 (thirty) minute unpaid lunch/meal break. If operational requirements make it impractical for an employee to be off duty for 30 minutes, the employee may eat while performing work duties and receive pay for that time, but the supervisor must approve this time.</li>
+                        <li>No food is permitted to be eaten at cash registers or on the sales floor at any time. Drinks must be in a closed container and only consumed if no customers are in the vicinity.</li>
+                        <li>Employees working a shift of 8 (eight) hours are required, to the extent practical, to take a 1 (one) hour unpaid lunch/meal break.</li>
+                        <li>Employees working on Sundays will be entitled to a paid 30 (thirty) minute lunch/meal break if they do not leave the store. If an employee leaves the premises they will be required to clock out for their lunch/meal break.</li>
+                        <li>Employees are permitted a 10 (ten) minute break for each 4 (four) hours of work, but they are not allowed to leave the premises, and they must check with their supervisor before taking a break.</li>
+                        <li>Lunch/meal periods and breaks are not permitted to be utilized to compensate for employee absences. For example, this means that employees cannot skip lunch/meal periods and/or breaks to be able to go home early or arrive late etc.</li>
+                        <li>Breaks are not to be taken at the registers, on the sales floor, in the business office, or anywhere else that interferes with or distracts other employees who are on the clock.</li>
+                    </ol>
+                </section>
+
+                <section id="parking" class="policy-subsection">
+                    <h3>I. Parking Policy <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <ol>
+                        <li>Employees may park their vehicles in the North parking lot during their shifts on Sundays through Thursdays, leaving plenty of room for customers to park and delivery trucks to access the receiving door.</li>
+                        <li>Employees are to park their vehicles in the far corner of the Northeast parking lot on Fridays and Saturdays to provide more room for customers to park.</li>
+                    </ol>
+                </section>
+
+                <section id="dress-code" class="policy-subsection">
+                    <h3>J. Dress Code and Appearance Standards <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <p>Cheers Liquor Mart requires all employees to present themselves in a professional manner with respect to clothing, personal hygiene, and appearance. Employees working in customer-facing roles, such as cashiers and stockers, are required to wear a uniform shirt or apron during their shifts. The following clothing policies apply to all employees, regardless of role:</p>
+                    <ul>
+                        <li>Clothing with rude, offensive, or obscene language or images is prohibited.</li>
+                        <li>Clothing should be clean and free from rips/tears and stains.</li>
+                        <li>Open toe shoes, flip-flops, and sandals are prohibited.</li>
+                        <li>Tank tops, spaghetti strap tops, halter tops; or any top that is mesh, sheer, see-through or otherwise revealing or exposes the midriff or undergarments are all prohibited.</li>
+                        <li>Shorts or skirts must be long enough to cover the body to at least mid-thigh.</li>
+                        <li>Any pants, shorts, or skirts that expose the midriff or undergarments, or are in any way see-through are prohibited.</li>
+                        <li>Any articles of clothing or accessories that interfere with safety are prohibited.</li>
+                    </ul>
+                    <p>Personal hygiene requirements ensure that all employees properly and professionally represent the company while at work. The following hygiene policies apply to all employees, regardless of role:</p>
+                    <ul>
+                        <li>Maintain personal cleanliness by bathing/showering regularly.</li>
+                        <li>Maintain oral hygiene by brushing teeth regularly.</li>
+                        <li>Minimize body odors by using deodorant/antiperspirant.</li>
+                        <li>Wash hands regularly and keep fingernails clean.</li>
+                    </ul>
+                    <p>It is within management's discretion to send an employee home, without pay, to change if they arrive at work in what is deemed to be in violation of the dress code and appearance standards.</p>
+                </section>
+
+                <section id="cell-phone" class="policy-subsection">
+                    <h3>K. Cell Phone/Mobile Device Policy <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <p>The purpose of this policy is to form a work environment that is safe, productive, and free of distractions. We understand that there may be times when you need to make/take personal calls or messages, however, watching videos, scrolling social media, playing games, etc. is absolutely not allowed while you are on the clock. This behavior has become rampant among employees, and if management, in its sole discretion, determines that employees are abusing the trust they are given to willingly comply with this policy, a workplace-wide ban of all cell phones/mobile devices will be implemented. All employees must adhere to the following policies:</p>
+                    <ul>
+                        <li>Cell phone/mobile device use of any type at the registers, on the sales floor, or otherwise in the view/potential view of customers is expressly prohibited.</li>
+                        <li>Any employee operating a company vehicle to complete deliveries must use a hands-free device to make or receive calls, and only when it is safe to do so.</li>
+                        <li>Employees are expected to set devices to silent or vibrate mode while working to minimize distraction.</li>
+                        <li>There may be occasions when employees need to use their personal phone/device to conduct company business. In these situations, the employee is expected to move away from colleagues to prevent distractions and make/receive the call out of the view/potential view of customers.</li>
+                        <li>Anyone caught using a device to record or share confidential company information will be subject to immediate termination of employment.</li>
+                        <li>Failure to comply with the Cell Phone/Mobile Device Policy will result in disciplinary measures up to and including termination of employment, with or without prior verbal/written warning(s).</li>
+                    </ul>
+                </section>
+
+                <section id="drug-policy" class="policy-subsection">
+                    <h3>L. Drug/Alcohol Policy <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <p>Drug and alcohol use in the workplace pose significant safety and health risks to employees as well as our customers, and it is the policy of Cheers Liquor Mart to prohibit the manufacture, distribution, dispensation, possession, purchase, sale, or use of controlled substances in the workplace, including marijuana. Employees are prohibited from arriving to work under the influence of substances as well as the consumption of substances during their working hours. Any employee found to have operated a company owned vehicle while under the influence of substances will be immediately terminated from employment.</p>
+                </section>
+
+                <section id="theft-policy" class="policy-subsection">
+                    <h3>M. Employee Theft Policy <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <p>Any employee found to have engaged in fraud, falsification, or any manner of theft will result in termination of employment, with or without prior verbal/written warning(s). Any merchandise purchased must have a receipt attached as proof of purchase, failure to provide proof of purchase will result in termination of employment. Employees leaving the store are subject to search of personal items, such as bags, backpacks, purses, coats, etc. at any time. Refusal to surrender personal items for search will result in termination of employment.</p>
+                </section>
+
+                <section id="smoking-policy" class="policy-subsection">
+                    <h3>N. Smoking/Vaping Policy <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <p>Smoking, vaping, or use of any electronic smoking device is not permitted in the building at any time. In accordance with local laws, any person smoking, vaping, or using an electronic smoking device must be 25 (twenty-five) feet or more from building entrances. Fully extinguished cigarette butts are to be thrown away in an outdoor trash receptacle, do not leave them on the ground or throw them away in an indoor trash receptacle. We ask that employees mitigate odor after smoking by washing their hands, using breath mints/gum, etc. to minimize any allergies or sensitivities that our customers or other employees may have.</p>
+                </section>
+
+                <section id="workers-comp" class="policy-subsection">
+                    <h3>O. Workers' Compensation / Workplace Injuries <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <p>All employees must report any on-the-job injuries, in writing, immediately but no more than 10 (ten) working days after the injury occurs. Even if the injury occurred more than 10 (ten) days ago employees still must report the injury in writing. Injuries are to be reported to the manager on duty and the Office Manager. Workers' Compensation Insurance pays for all medical expenses that are reasonable, necessary, and related to the workplace injury if the care is received from an authorized treating physician/provider. Treatment by a physician/provider not on the designated provider list must be preapproved by the insurance carrier in order for any medical expenses to be covered.</p>
+                    <p>If the injury requires emergency treatment seek care at the nearest hospital immediately. If non-emergency treatment is required, employees may choose to seek treatment from one of the following designated providers:</p>
+
+                    <div>
+                        <p>Concentra Medical Center – South Academy<br>
+                        2322 S. Academy Blvd.<br>
+                        Colorado Springs, CO 80916<br>
+                        (719) 390-1727</p>
+
+                        <p>Pikes Peak Primary Care<br>
+                        1900 E. Pikes Peak Ave.  Suite 1<br>
+                        Colorado Springs, CO 80909<br>
+                        (719) 632-3757</p>
+
+                        <p>Concentra Medical Center – Austin Bluffs<br>
+                        4083 Austin Bluffs Pkwy.<br>
+                        Colorado Springs, CO 80918<br>
+                        (719) 594-0046</p>
+
+                        <p>UC Health Medical Group<br>
+                        175 S. Union Blvd.  Suite 305<br>
+                        Colorado Springs, CO 80910<br>
+                        (719) 365-6881</p>
+
+                        <p>Insurance Carrier: Pinnacol Assurance<br>
+                        Policy Number: 4030119<br>
+                        (800) 873-7242</p>
+                    </div>
+                </section>
+
+                <section id="employee-purchases" class="policy-subsection">
+                    <h3>P. Employee Purchases <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <p>Employees will receive a 15% discount on merchandise purchased for themselves. This discount does not apply to tobacco/nicotine products, keg purchases, sale items, or discounted case items. No employee is permitted to ring up their own sale, purchases must be rung up by a manager.</p>
+                    <p>Employees may charge purchases to their House Charge account. The credit limit for full-time employees is $100.00, the credit limit for part-time employees is $50.00. At the close of a pay period, any outstanding employee House Charge balances will be deducted in full from the upcoming paycheck. Employees are not permitted to carry over any outstanding balance into the next pay period.</p>
+                </section>
+
+                <section id="shoplifters" class="policy-subsection">
+                    <h3>Q. Shoplifters & Robbery Protocol <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <p>If you see anyone shoplifting, or attempting to shoplift, notify the manager on duty immediately and follow their instructions. Do not place yourself or anyone around you in danger to confront a shoplifter, no merchandise is worth the risk of injury to you or any other person. Do your best to note the shoplifter's appearance and any other identifying information to assist with prosecution of the shoplifter.</p>
+                    <p>In the event someone approaches you with the intent to commit robbery, stay calm. Encourage others to remain calm and avoid any actions that may escalate the situation. Do not make any sudden moves, keep your hands visible, and do not talk or volunteer any more information than the robber may ask for. Cooperate with the robber and avoid confrontation. Your safety, and that of anyone else around you, are the highest priorities. Do not stare at the robber but do your best to make mental notes about the robber to assist with prosecution. Do not attempt to follow or chase the robber when they leave the store. As soon as it is safe to do so, lock the doors and call 911. Stay in control of your emotions and the surroundings as you wait for the police to arrive, do not conduct any business or touch anything that the robber may have touched. Ask any witnesses to stay until police arrive. If they must leave, obtain their name, address, and phone number. Do not give out any information regarding the robbery except to the police/law enforcement or store management.</p>
+                </section>
+
+                <section id="age-restricted" class="policy-subsection">
+                    <h3>R. Age-Restricted Purchases/Identification Policy <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <p>Alcohol may not be sold to or given to any person under the age of 21 (twenty-one) years, or to any person who appears to be visibly intoxicated.</p>
+                    <p>Cigarettes, tobacco products, or nicotine products may not be sold to or given to any person under the age of 21 (twenty-one) years. If any employee is discovered to have violated these regulations, they will be immediately terminated from employment.</p>
+                    <p>The State of Colorado requires valid identification from any person who appears to be under the age of 50 (fifty) in order to purchase alcohol or tobacco/nicotine products. Valid ID, including verified digital ID, must be valid and unexpired, contain a picture and a date of birth, and is limited to the following:</p>
+                    <ul>
+                        <li>Driver License or Identification Card issued by a state within the United States, the District of Columbia, any U.S. Territory, or any foreign country including Canada or Mexico</li>
+                        <li>A United States military ID card or any other ID card issued by the U.S. Government, including a permanent resident card, alien registration card, or consular card</li>
+                        <li>A passport, or passport card</li>
+                        <li>A valid consular ID card from any foreign country</li>
+                    </ul>
+                    <p>If an employee has a reasonable suspicion that the ID presented to them is forged or in any way invalid, they may not complete the sale of alcohol, tobacco, or nicotine products.</p>
+                </section>
+
+                <section id="violence-policy" class="policy-subsection">
+                    <h3>S. Policy Prohibiting Threats or Acts of Violence and Weapons <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <p>Cheers Liquor Mart's policy is to promote a safe environment for our employees free from violence, harassment, intimidation, and other disruptive behavior. Violent behavior of any kind or threats of violence, either implied or direct, are prohibited at Cheers and at company-sponsored off-site events. Possession of any type of weapon on Cheers Liquor Mart property, including parking lots, or at any company-sponsored off-site event, is prohibited. Possession of any type of concealed carry permit does not exclude an individual from this policy. Those individuals are still prohibited from bringing a firearm or any other type of weapon onto Cheers Liquor Mart property. This includes parking lots or any company-sponsored off-site event.</p>
+                    <p>Any employee who believes they have been the victim of violence, believes they have been threatened with violence, or witnesses an act or threat of violence is encouraged to report the situation. If an emergency exists and the situation is one of immediate danger, the employee should contact law enforcement by calling 911 and taking available steps to protect themselves from immediate harm. If the situation is not one of immediate danger, the employee should notify their supervisor or appropriate manager as soon as possible. Employees have the right to file a complaint with law enforcement on their own. Retaliation against a person who makes a complaint regarding violent behavior or threats of violence made to them is prohibited.</p>
+                    <p>Violence in the workplace may include, but is not limited to, the following prohibited behaviors:</p>
+                    <ul>
+                        <li>Direct threats or physical intimidation</li>
+                        <li>Implications or suggestions of violence, including veiled threats</li>
+                        <li>Stalking</li>
+                        <li>Possession of weapons of any kind on company property, including parking lots, or while attending any company-sponsored off-site event</li>
+                        <li>Assault of any form</li>
+                        <li>Physical restraint or confinement</li>
+                        <li>Dangerous or threatening horseplay</li>
+                        <li>Loud, angry, or disruptive behavior or language not part of the typical work environment</li>
+                        <li>Blatant or intentional disregard for the safety or well-being of others</li>
+                        <li>Commission of a violent felony or misdemeanor on company property</li>
+                        <li>Any other act that a reasonable person would perceive as constituting a threat of violence</li>
+                    </ul>
+                    <p>Failure to comply with this policy will result in disciplinary action up to and including termination of employment at Cheers Liquor Mart.</p>
+                </section>
+
+                <section id="disciplinary" class="policy-subsection">
+                    <h3>T. Disciplinary Escalation Policy <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <p>If an employee is found to be in violation of any the policies and/or procedures outlined in this Handbook, the following steps will be taken to address and correct the behavior:</p>
+                    <ul>
+                        <li>FIRST INCIDENT will result in a documented verbal warning to the employee.</li>
+                        <li>SECOND INCIDENT will result in a formal written warning to the employee.</li>
+                        <li>THIRD INCIDENT will result in suspension without pay. Management reserves the right to determine the suspension period at its discretion. A suspended employee may not use paid vacation or sick hours to cover hours missed due to suspension.</li>
+                        <li>FOURTH INCIDENT will result in termination of employment.</li>
+                    </ul>
+                    <p>Violation of the following policies will subject an employee to immediate termination of employment at the discretion of the company owner and/or management, regardless of the disciplinary escalation policy outlined above:</p>
+                    <ul>
+                        <li>Cell Phone/Mobile Device Policy</li>
+                        <li>Operating a company vehicle under the influence of drugs/alcohol/substances</li>
+                        <li>Theft of any type</li>
+                        <li>Selling alcohol to underage or visibly intoxicated person(s)</li>
+                        <li>Selling tobacco or nicotine products to underage person(s)</li>
+                    </ul>
+                </section>
+
+                <section id="summary" class="policy-subsection">
+                    <h3>U. Summary & Employee Acknowledgement <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <p>No Employee Handbook can address all possible situations, but we have tried to cover the most common topics. Your position may also be subject to a separate manual or job guide specific to your role. If this applies to you, your supervisor will provide a copy to you. If you have suggestions for future revisions of the Handbook, please communicate those with the General Manager or Operations Manager - we value and appreciate feedback from our employees.</p>
+                    <p>We trust that you will always maintain integrity and provide the exceptional customer service that Cheers Liquor Mart has come to be known for over the decades. In closing, we would like to reiterate the following items as they are non-negotiable and would be grounds for termination of your employment at Cheers if you fail to follow them:</p>
+                    <ul>
+                        <li>Always treat customers with the utmost courtesy.</li>
+                        <li>Always follow identification laws, never sell to an underage person.</li>
+                        <li>Never sell to a visibly intoxicated person.</li>
+                        <li>Excessive tardiness or unexcused absences will not be tolerated.</li>
+                        <li>Being uncooperative or disruptive will not be tolerated.</li>
+                        <li>Arriving to work under the influence of drugs or alcohol is prohibited.</li>
+                        <li>Consumption, possession, buying, or selling drugs or consumption of alcohol on company property is prohibited.</li>
+                        <li>Insubordination or unsatisfactory job performance will not be tolerated. This includes but is not limited to violation of break/meal period policies, horse play, violation of safety policies, departing before your scheduled shift ends, sleeping on the job, and failing to show up for your scheduled shift, and not following directions from a manager or supervisor.</li>
+                        <li>Any form of harassment or discrimination toward coworkers, customers, vendors, etc. will not be tolerated.</li>
+                        <li>Theft of any kind will not be tolerated; nor will any form of falsification, fraud, or deceit.</li>
+                        <li>Conduct which is detrimental to the image of Cheers Liquor Mart, such as using foul language or engaging in inappropriate conversations on the sales floor, is unacceptable. This includes conduct at off-site company functions such as golf tournaments, festivals, events, etc. at which you are representing Cheers Liquor Mart.</li>
+                        <li>Failure to comply with any policies/procedures in the Employee Handbook or position-specific manual/job guide will be grounds for termination of employment.</li>
+                    </ul>
+                </section>
+
+                <section id="acknowledgement" class="policy-subsection">
+                    <h3>CHEERS LIQUOR MART EMPLOYEE HANDBOOK RECEIPT ACKNOWLEDGEMENT AND SIGNATURE <a href="#" class="back-to-top">[Back to Top]</a></h3>
+                    <p>My signature below acknowledges that I have read the Cheers Liquor Mart Employee Handbook in its entirety, and I understand the policies it contains. I understand that I should consult the General Manager, Owner, or Operations Manager regarding any questions I may have that are not addressed in this Handbook.</p>
+                    <p>I also acknowledge by signing below that I understand that this Handbook supersedes all prior practices, oral or written. By distributing this Handbook, Cheers Liquor Mart expressly revokes all previous policies and/or procedures which are inconsistent with those contained herein. Any future changes to the Handbook will be communicated to me through official notices, and I understand that information may supersede, modify, or eliminate existing policies.</p>
+                    <p>I have received a printed copy of this Handbook, and I understand it is my responsibility to comply with the requirements and expectations it contains, as well as any future revisions that may be made, as a condition of my employment at Cheers Liquor Mart.</p>
+
+                    <div class="signature-area">
+                        <p>________________________________________</p>
+                        <p>EMPLOYEE PRINTED NAME (PRINT CLEARLY)</p>
+                        <br>
+                        <p>________________________________________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_________________________</p>
+                        <p>EMPLOYEE SIGNATURE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DATE</p>
+                    </div>
+                </section>
+            </section>
 
             <div class="policy-meta">
-                <p>Last Updated: March 1, 2024</p>
+                <p>Last Updated: December 17, 2024</p>
                 <p>Policy Number: POL-001</p>
             </div>
         </div>

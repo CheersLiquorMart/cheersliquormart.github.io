@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gin Guide - Learn about different types of gin, their characteristics, and best uses for Cheers Liquor Mart employees">
+    <meta name="theme-color" content="#d81e05">
+    <title>Gin Guide - Cheers Liquor Mart</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .guide-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .guide-section h2 {
+            color: #065f46;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #f3f4f6;
+            padding-bottom: 0.5rem;
+        }
+
+        .guide-section h3 {
+            color: #065f46;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .guide-section ul, .guide-section ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .guide-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box {
+            background-color: #f3f4f6;
+            border-left: 4px solid #d81e05;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box h4 {
+            margin-top: 0;
+            color: #d81e05;
+        }
+
+        .type-card {
+            background-color: #f9fafb;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-left: 3px solid #065f46;
+        }
+
+        .process-steps {
+            counter-reset: step-counter;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .process-steps li {
+            position: relative;
+            padding-left: 2.5rem;
+            margin-bottom: 1rem;
+            counter-increment: step-counter;
+        }
+
+        .process-steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1.75rem;
+            height: 1.75rem;
+            background-color: #065f46;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .best-for {
+            font-style: italic;
+            color: #065f46;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav aria-label="Primary navigation">
+            <div class="container">
+                <div class="nav-left">
+                    <a href="javascript:history.back()" class="nav-back">← Back</a>
+                    <a href="index.html" class="logo">
+                        <img src="public/images/cheers-logo.png" alt="Cheers Liquor Mart Logo">
+                        <span class="sr-only">Cheers Liquor Mart</span>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="policies.html">Policies</a>
+                    <a href="events.html">Events</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="beverage-education.html">Education</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Gin Guide</h1>
+        <p class="subtitle">Master the essentials of gin to provide expert recommendations to your customers</p>
+
+        <div class="guide-section">
+            <h2>What is Gin?</h2>
+            <p>Gin is a distilled spirit where juniper is non-negotiable. It starts with a neutral spirit (usually from grains) that's transformed by a mix of botanicals. The taste profile is built around juniper, with support from citrus, coriander, and herbs.</p>
+
+            <h2>Key Features of Gin</h2>
+            <ul>
+                <li><strong>Juniper Dominance</strong>: It must have juniper as the primary flavor.</li>
+                <li><strong>Botanical Blend</strong>: Additional ingredients like citrus peel, angelica root, and cardamom define its character.</li>
+                <li><strong>Versatility</strong>: Ranges from dry and piney to sweet and floral.</li>
+            </ul>
+
+            <h2>Types of Gin & Their Best Uses</h2>
+
+            <div class="type-card">
+                <h3>London Dry Gin</h3>
+                <ul>
+                    <li>No added sugar</li>
+                    <li>Pure, juniper-forward taste with citrus and herbal notes</li>
+                    <li>Classic examples: Tanqueray, Beefeater, Bombay Sapphire</li>
+                </ul>
+                <p class="best-for"><strong>Best for</strong>: Classic cocktails like a crisp Gin & Tonic or Martini. Its strong juniper bite stands up well to mixers.</p>
+            </div>
+
+            <div class="type-card">
+                <h3>Plymouth Gin</h3>
+                <ul>
+                    <li>Made exclusively in Plymouth, England</li>
+                    <li>Smoother and earthier</li>
+                    <li>Works perfectly in a martini or gin & tonic</li>
+                </ul>
+                <p class="best-for"><strong>Best for</strong>: Cocktails that benefit from a smoother, slightly sweeter profile—ideal for Negronis and Gimlets.</p>
+            </div>
+
+            <div class="type-card">
+                <h3>Old Tom Gin</h3>
+                <ul>
+                    <li>A touch sweeter due to a slight sugar addition</li>
+                    <li>Popular in 18th- and 19th-century recipes</li>
+                    <li>Examples: Hayman's Old Tom</li>
+                </ul>
+                <p class="best-for"><strong>Best for</strong>: Vintage cocktails (think Tom Collins or Martinez) that need a touch of sweetness to balance the bitter or tart ingredients.</p>
+            </div>
+
+            <div class="type-card">
+                <h3>New Western Dry Gin</h3>
+                <ul>
+                    <li>Shifts the focus away from heavy juniper</li>
+                    <li>Emphasizes unique botanicals—floral, citrus, herbal, or even spicy</li>
+                    <li>Examples: Hendrick's (with cucumber and rose), Aviation</li>
+                </ul>
+                <p class="best-for"><strong>Best for</strong>: Modern, creative cocktails that highlight unique botanicals. They're less juniper-heavy, offering versatility.</p>
+            </div>
+
+            <div class="type-card">
+                <h3>Genever</h3>
+                <ul>
+                    <li>Gin's old-school ancestor</li>
+                    <li>Examples: Bols Genever</li>
+                </ul>
+                <p class="best-for"><strong>Best for</strong>: Sipping neat or mixing in cocktails where a maltier, fuller flavor is welcome.</p>
+            </div>
+
+            <div class="type-card">
+                <h3>Navy Strength Gin</h3>
+                <ul>
+                    <li>Higher alcohol content</li>
+                </ul>
+                <p class="best-for"><strong>Best for</strong>: Cocktails that need a punch. Works well when you want the gin's character to shine through without dilution.</p>
+            </div>
+
+            <div class="type-card">
+                <h3>Barrel-Aged Gin</h3>
+                <ul>
+                    <li>Aged in wooden barrels, adding complexity</li>
+                </ul>
+                <p class="best-for"><strong>Best for</strong>: Sipping neat or using in cocktails that call for extra complexity. The wood notes add a rich depth similar to some whiskies.</p>
+            </div>
+
+            <h2>The Gin-Making Process</h2>
+            <ol class="process-steps">
+                <li><strong>Base Spirit Production</strong>: Distill a neutral grain spirit (wheat, barley, or corn).</li>
+                <li><strong>Botanical Infusion</strong>: Either steep botanicals in the spirit or pass vapors through them for flavor extraction.</li>
+                <li><strong>Redistillation</strong>: The infused spirit is redistilled to blend and refine the flavors.</li>
+                <li><strong>Dilution & Bottling</strong>: Dilute the spirit to the desired strength (typically 40–50% ABV) and bottle.</li>
+            </ol>
+
+            <h2>How to Serve Gin</h2>
+            <ul>
+                <li><strong>Classic Cocktails</strong>: Gin & Tonic, Martini, Negroni, and Tom Collins prove its versatility.</li>
+                <li><strong>Neat or On the Rocks</strong>: Premium gins can be sipped like a fine whiskey.</li>
+                <li><strong>Garnishes</strong>: Lemon, lime, cucumber, or even extra juniper can heighten the flavor profile.</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h4>QUICK SELLING TIP</h4>
+                <p>When suggesting gin cocktails, ask customers if they prefer traditional juniper-forward gins or something with unique botanicals. This helps tailor recommendations to their taste preferences and demonstrates your expertise.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Contact</h3>
+                    <p>123 Main Street</p>
+                    <p>Your City, State 12345</p>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div>
+                    <h3>Hours</h3>
+                    <p>Mon-Fri: 9:00 AM - 9:00 PM</p>
+                    <p>Saturday: 10:00 AM - 8:00 PM</p>
+                    <p>Sunday: 11:00 AM - 6:00 PM</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="policies.html">Company Policies</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                        <li><a href="resources.html">Employee Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cheers Liquor Mart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vodka Guide - Learn about different types of vodka, their characteristics, and best uses for Cheers Liquor Mart employees">
+    <meta name="theme-color" content="#d81e05">
+    <title>Vodka Guide - Cheers Liquor Mart</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .guide-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .guide-section h2 {
+            color: #065f46;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #f3f4f6;
+            padding-bottom: 0.5rem;
+        }
+
+        .guide-section h3 {
+            color: #065f46;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .guide-section ul, .guide-section ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .guide-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box {
+            background-color: #f3f4f6;
+            border-left: 4px solid #d81e05;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box h4 {
+            margin-top: 0;
+            color: #d81e05;
+        }
+
+        .type-card {
+            background-color: #f9fafb;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-left: 3px solid #065f46;
+        }
+
+        .process-steps {
+            counter-reset: step-counter;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .process-steps li {
+            position: relative;
+            padding-left: 2.5rem;
+            margin-bottom: 1rem;
+            counter-increment: step-counter;
+        }
+
+        .process-steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1.75rem;
+            height: 1.75rem;
+            background-color: #065f46;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .best-for {
+            font-style: italic;
+            color: #065f46;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav aria-label="Primary navigation">
+            <div class="container">
+                <div class="nav-left">
+                    <a href="javascript:history.back()" class="nav-back">← Back</a>
+                    <a href="index.html" class="logo">
+                        <img src="public/images/cheers-logo.png" alt="Cheers Liquor Mart Logo">
+                        <span class="sr-only">Cheers Liquor Mart</span>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="policies.html">Policies</a>
+                    <a href="events.html">Events</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="beverage-education.html">Education</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Vodka Guide</h1>
+        <p class="subtitle">Understand the world's most versatile spirit to provide expert recommendations to your customers</p>
+
+        <div class="guide-section">
+            <h2>What is Vodka?</h2>
+            <p>Vodka is a spirit stripped down to its basics—neutral and smooth. It's made to be nearly flavorless, making it the perfect canvas for cocktails. Ingredients typically include grains (wheat, rye, corn) or potatoes.</p>
+
+            <h2>Key Features of Vodka</h2>
+            <ul>
+                <li><strong>Neutrality</strong>: The goal is a clean, unobtrusive taste.</li>
+                <li><strong>Multiple Distillations</strong>: Often distilled several times for purity.</li>
+                <li><strong>Versatility</strong>: Ideal for mixing in a wide range of cocktails or serving chilled in shots.</li>
+            </ul>
+
+            <h2>Types of Vodka & Their Best Uses</h2>
+
+            <div class="type-card">
+                <h3>Standard (Unflavored) Vodka</h3>
+                <ul>
+                    <li>Prioritizes purity and smoothness</li>
+                    <li>Goes through multiple distillations</li>
+                    <li>Examples: Absolut, Tito's, Grey Goose</li>
+                </ul>
+                <p class="best-for"><strong>Best for</strong>: Mixing in any cocktail from a classic Vodka Tonic to a Moscow Mule. Its clean, neutral profile lets other ingredients do the talking.</p>
+            </div>
+
+            <div class="type-card">
+                <h3>Flavored Vodka</h3>
+                <ul>
+                    <li>Infused with flavors like citrus, berries, or spices</li>
+                    <li>Perfect for fruity or dessert cocktails</li>
+                    <li>Examples: Absolut Citron, Smirnoff Vanilla</li>
+                </ul>
+                <p class="best-for"><strong>Best for</strong>: Cocktails where you want an extra twist of flavor without the need for additional ingredients—think a Cosmopolitan with a kick or a fruity spritz.</p>
+            </div>
+
+            <div class="type-card">
+                <h3>Premium Vodka</h3>
+                <ul>
+                    <li>Uses higher-quality ingredients or unique bases (like grapes or organic wheat)</li>
+                    <li>Often marketed as extra-smooth with subtle nuances</li>
+                    <li>Examples: Beluga, Crystal Head, Chopin (potato-based)</li>
+                </ul>
+                <p class="best-for"><strong>Best for</strong>: Martinis and other cocktails where the vodka is a prominent component. The smooth texture and subtle flavors shine in simple recipes.</p>
+            </div>
+
+            <div class="type-card">
+                <h3>Rye Vodka</h3>
+                <ul>
+                    <li>Made from rye grains</li>
+                    <li>Examples: Chopin Rye</li>
+                </ul>
+                <p class="best-for"><strong>Best for</strong>: Cocktails that benefit from a spicier, robust character. It can add a subtle heat and earthiness to a martini or a Bloody Mary.</p>
+            </div>
+
+            <div class="type-card">
+                <h3>Potato Vodka</h3>
+                <ul>
+                    <li>Made from potatoes instead of grains</li>
+                    <li>Examples: Chopin Potato, Luksusowa</li>
+                </ul>
+                <p class="best-for"><strong>Best for</strong>: Neat sipping or cocktails where a creamier, fuller texture is desired. Its smooth finish works well in simple mixes.</p>
+            </div>
+
+            <div class="type-card">
+                <h3>Craft/Artisanal Vodka</h3>
+                <ul>
+                    <li>Small-batch production methods</li>
+                    <li>Often emphasizes local ingredients or unique production techniques</li>
+                </ul>
+                <p class="best-for"><strong>Best for</strong>: Unique, small-batch cocktails where you want a local or innovative edge. These often have a distinct character based on the ingredients and process used.</p>
+            </div>
+
+            <h2>The Vodka-Making Process</h2>
+            <ol class="process-steps">
+                <li><strong>Fermentation</strong>: Convert starches from grains or potatoes into alcohol.</li>
+                <li><strong>Distillation</strong>: Multiple rounds of distillation remove impurities and flavor.</li>
+                <li><strong>Filtration</strong>: Commonly filtered through charcoal, quartz, or even other media to enhance clarity.</li>
+                <li><strong>Dilution & Bottling</strong>: Dilute to about 40% ABV (80 proof) and then bottle.</li>
+            </ol>
+
+            <h2>How to Serve Vodka</h2>
+            <ul>
+                <li><strong>Classic Cocktails</strong>: Think Moscow Mule, Bloody Mary, and Cosmopolitan.</li>
+                <li><strong>Chilled Shots</strong>: In some traditions (especially Eastern European), vodka is best served ice-cold.</li>
+                <li><strong>On the Rocks</strong>: Premium vodkas can be enjoyed over ice with a twist of citrus.</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h4>QUICK SELLING TIP</h4>
+                <p>When a customer is unsure about vodka selections, focus your recommendations on how they plan to enjoy it. For mixed drinks, suggest mid-tier options that offer good value. For martinis or neat sipping, guide them toward premium options where smoothness makes a noticeable difference.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Contact</h3>
+                    <p>123 Main Street</p>
+                    <p>Your City, State 12345</p>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div>
+                    <h3>Hours</h3>
+                    <p>Mon-Fri: 9:00 AM - 9:00 PM</p>
+                    <p>Saturday: 10:00 AM - 8:00 PM</p>
+                    <p>Sunday: 11:00 AM - 6:00 PM</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="policies.html">Company Policies</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                        <li><a href="resources.html">Employee Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cheers Liquor Mart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
